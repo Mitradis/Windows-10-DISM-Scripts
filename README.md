@@ -21,6 +21,7 @@ Image optimization by removing pre-installed junk packages, disabling update tas
 - Run CMD and run the first command from the _readme.txt file.
 - Using UltraISO (or analogues), delete the install.wim file in the .iso image and add the resulting install.esd and boot.wim.
 - The image is ready.
+- During the installation of this image, the Internet must be turned off until the system is automatically rebooted 2 times.
 
 # 应用：
 - 必须拥有完整的管理员权限：计算机配置 - Windows 设置 - 安全设置 - 本地策略 - 安全选项 - 用户帐户控制：所有管理员在批准模式下运行 - 已禁用。
@@ -33,6 +34,7 @@ Image optimization by removing pre-installed junk packages, disabling update tas
 - 运行 CMD 并运行 _readme.txt 文件中的第一个命令。
 - 使用 UltraISO（或类似物），删除 .iso 映像中的 install.wim 文件并添加生成的 install.esd 和 boot.wim。
 - 图像已准备就绪。
+- 在安裝此映像期間，必須關閉 Internet，直到系統自動重新啟動 2 次。
 
 # Применение:
 - Должны быть полные права администратора: Конфигурация компьютера — Конфигурация Windows — Параметры безопасности — Локальные политики — Параметры безопасности — Контроль учетных записей: все администраторы работают в режиме одобрения — Отключено.
@@ -45,3 +47,4 @@ Image optimization by removing pre-installed junk packages, disabling update tas
 - Запустить CMD и выполнить первую команду из файла _readme.txt.
 - С помощью UltraISO (или аналогов) удалить в .iso образе файл install.wim и добавить получившийся install.esd и boot.wim.
 - Образ готов.
+- Во время установки данного образа должен быть выключен интернет, пока система не будет автоматически 2 раза перезагружена.
