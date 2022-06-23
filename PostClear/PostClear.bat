@@ -1,6 +1,6 @@
 mode con:cols=50 lines=1
 title Start work...
-call :PostClear>>C:\PostClear.log 2>&1
+call :PostClear>>%userprofile%\Desktop\PostClear.log 2>&1
 EXIT /b 0
 :PostClear
 if exist %programdata%\PostClear\FirstLoad.txt (
