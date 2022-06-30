@@ -174,6 +174,6 @@ start /w Z:\WimOptimize.exe Z:\boot.wim
 title Done...
 del /f /q Z:\Clear.ps1
 del /f /q Z:\Clear.reg
-del /f /q Z:\DISM.Scripts.rar
+del /f /q Z:\DISM.Scripts.zip
 del /f /q Z:\WimOptimize.exe
 del /f /q Z:\Clear.bat
