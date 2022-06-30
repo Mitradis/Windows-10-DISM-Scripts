@@ -7,6 +7,9 @@ Windows Registry Editor Version 5.00
 "{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
 "{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+; Заголовки окон и границы окон
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
+"ColorPrevalence"=dword:00000001
 ; Группировать кнопки на панели задач
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "TaskbarGlomLevel"=dword:00000002
