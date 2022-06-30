@@ -175,6 +175,8 @@ del /f /q "%userprofile%\Desktop\Microsoft Edge.lnk"
 title Applying PostClearM.reg
 %programdata%\PostClear\AdvancedRun.exe /EXEFilename %windir%\regedit.exe /CommandLine "/S %programdata%\PostClear\PostClearM.reg" /RunAs 4 /WaitProcess 1 /Run
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}" /v location /t REG_SZ /d "%programfiles(x86)%\Microsoft\Edge\Application"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}" /v location /t REG_SZ /d "%programfiles(x86)%\Microsoft\Edge\Application"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}" /v EBWebView /t REG_SZ /d "%programfiles(x86)%\Microsoft\Edge\Application\92.0.902.67"
 TIMEOUT /T 1 /NOBREAK >nul
 title Finality
 rd /s /q "%programdata%\PostClear\Classic Shell"
