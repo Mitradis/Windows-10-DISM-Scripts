@@ -33,6 +33,9 @@ Windows Registry Editor Version 5.00
 ; Диспетчер скачанных карт
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MapsBroker]
 "Start"=dword:00000004
+; Журнал событий Windows
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog]
+"Start"=dword:00000002
 ; Клиент отслеживания изменившихся связей
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TrkWks]
 "Start"=dword:00000004

@@ -7,6 +7,7 @@ if exist %programdata%\PostClear\FirstLoad.txt (
 	title Kill Explorer
 	taskkill /f /im explorer.exe
 	TIMEOUT /T 5 /NOBREAK >nul
+	reg add "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog" /v Start /t REG_DWORD /d 4 /f
 	del /f /q %programdata%\PostClear\FirstLoad.txt
 	goto Reboot
 )

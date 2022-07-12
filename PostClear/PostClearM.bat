@@ -143,6 +143,10 @@ powercfg /change monitor-timeout-ac 10
 powercfg /change monitor-timeout-dc 5
 powercfg /change standby-timeout-ac 0
 powercfg /change standby-timeout-dc 0
+title Freeze Eventlog
+rd /s /q %windir%\System32\winevt\Logs
+mkdir %windir%\System32\winevt\Logs
+icacls %windir%\System32\winevt\Logs /deny *S-1-1-0:(W,D,X,R,RX,M,F) *S-1-5-7:(W,D,X,R,RX,M,F)
 title Copy Edge icons
 move %programdata%\PostClear\Assets %windir%\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\Assets
 title Shortcuts
