@@ -1,6 +1,5 @@
 title Replacing StartMenu
 taskkill /f /im StartMenuExperienceHost.exe
-taskkill /f /im explorer.exe
 taskkill /f /im ShellExperienceHost.exe
 taskkill /f /im backgroundTaskHost.exe
 taskkill /f /im ScreenClippingHost.exe
@@ -20,18 +19,16 @@ for %%a in (%BLOCKLIST%) do (
 xcopy /y "%programdata%\PostClear\Classic Shell" "%programfiles%\Classic Shell"
 TIMEOUT /T 1 /NOBREAK >nul
 title Editing .dll`s
-net stop AppXSvc
-set EDITLIST=%windir%\System32\AppXDeploymentExtensions.desktop.dll
+set EDITLIST=%windir%\System32\InputSwitch.dll %windir%\ImmersiveControlPanel\SystemSettings.dll
 if not exist %windir%\zh-CN\explorer.exe.mui (
-	set EDITLIST=%EDITLIST% %windir%\System32\InputSwitch.dll %windir%\ImmersiveControlPanel\SystemSettings.dll
-)
-for %%a in (%EDITLIST%) do (
-	takeown /f %%a
-	icacls %%a /grant "%username%":f /c /l /q
-	cscript %programdata%\PostClear\BytesReplacer.vbs %%a %%a.mod
-	if exist %%a.mod (
-		del /f /q %%a
-		move %%a.mod %%a
+	for %%a in (%EDITLIST%) do (
+		takeown /f %%a
+		icacls %%a /grant "%username%":f /c /l /q
+		cscript %programdata%\PostClear\BytesReplacer.vbs %%a %%a.mod
+		if exist %%a.mod (
+			del /f /q %%a
+			move %%a.mod %%a
+		)
 		%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy remotesigned -Command "& Get-Acl -Path %windir%\System32\control.exe | Set-Acl -Path %%a"
 	)
 )
@@ -117,9 +114,9 @@ schtasks /change /tn "Microsoft\Windows\WindowsUpdate\Scheduled Start" /disable
 %programdata%\PostClear\AdvancedRun.exe /EXEFilename %windir%\System32\schtasks.exe /CommandLine "/delete /tn Microsoft\Windows\UpdateOrchestrator\USO_UxBroker /f" /RunAs 4 /WaitProcess 1 /Run
 TIMEOUT /T 1 /NOBREAK >nul
 title Applying GroupPolicy
-%programdata%\PostClear\LGPO.exe /m %programdata%\PostClear\GPm.pol
+%programdata%\PostClear\LGPO.exe /m %programdata%\PostClear\GPM.pol
 TIMEOUT /T 1 /NOBREAK >nul
-%programdata%\PostClear\LGPO.exe /u %programdata%\PostClear\GPu.pol
+%programdata%\PostClear\LGPO.exe /u %programdata%\PostClear\GPU.pol
 TIMEOUT /T 1 /NOBREAK >nul
 title Updating GroupPolicy
 gpupdate /force
@@ -186,8 +183,8 @@ title Finality
 rd /s /q "%programdata%\PostClear\Classic Shell"
 del /f /q %programdata%\PostClear\AdvancedRun.exe
 del /f /q %programdata%\PostClear\ClassicShell.msi
-del /f /q %programdata%\PostClear\GPm.pol
-del /f /q %programdata%\PostClear\GPu.pol
+del /f /q %programdata%\PostClear\GPM.pol
+del /f /q %programdata%\PostClear\GPU.pol
 del /f /q %programdata%\PostClear\LGPO.exe
 del /f /q %programdata%\PostClear\BytesReplacer.vbs
 del /f /q %programdata%\PostClear\PostClearM.reg

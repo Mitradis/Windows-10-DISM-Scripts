@@ -24,9 +24,6 @@ Windows Registry Editor Version 5.00
 ; Брандмауэр Защитника Windows
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\mpssvc]
 "Start"=dword:00000004
-; Брокер мониторинга среды выполнения System Guard
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SgrmBroker]
-"Start"=dword:00000004
 ; Диспетчер подключений удаленного доступа
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RasMan]
 "Start"=dword:00000004
@@ -135,33 +132,17 @@ Windows Registry Editor Version 5.00
 ; Отключение автоматической синхронизации времени
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
 "Type"="NoSync"
-; GameDVR
-[-HKEY_CURRENT_USER\System\GameConfigStore\Children]
-[-HKEY_CURRENT_USER\System\GameConfigStore\Parents]
-; Минимально возможный размер журналов
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application]
-"MaxSize"=dword:00000000
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Security]
-"MaxSize"=dword:00000000
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\System]
-"MaxSize"=dword:00000000
-; Размер для кеша иконок (16 МБ)
+; Размер для кеша иконок (8 МБ)
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
-"Max Cached Icons"="16384"
+"Max Cached Icons"="8192"
 ; Дополнительные библиотеки контекстного меню
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked]
 ; EPP
 "{09A47860-11B0-4DA5-AFA5-26D86198A780}"=""
-; New Menu Handler
-"{D969A300-E7FF-11d0-A93B-00A0C90F2719}"=""
-; SlideshowContextMenu
-"{0bf754aa-c967-445c-ab3d-d8fda9bae7ef}"=""
-; Start Menu Pin
-"{a2a9545d-a0c2-42b4-9708-a0b2badd77c8}"=""
-; Taskband Pin
-"{90AA3A4E-1CBA-4233-B8BB-535773D48449}"=""
 ; Sync Center Folder
 "{9C73F5E5-7AE7-4E32-A8E8-8D23B85255BF}"=""
+; Передать на устройство
+"{7AD84985-87B4-4a16-BE58-8B72A5B390F7}"=""
 ; Элементы Этот Компьютер. Объемные объекты
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
 [-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
@@ -264,6 +245,22 @@ Windows Registry Editor Version 5.00
 [-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Audio\shell\Play]
 [-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Image\shell\Enqueue]
 [-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Image\shell\Play]
+; Возвращение Просмотр фотографий Windows в список приложений
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open]
+"MuiVerb"="@%programfiles%\\Windows Photo Viewer\\photoviewer.dll,-3043"
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\DropTarget]
+"Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
 ; ClassicShell
 [-HKEY_CLASSES_ROOT\exefile\shellex\ContextMenuHandlers\StartMenuExt]
 [-HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers\StartMenuExt]

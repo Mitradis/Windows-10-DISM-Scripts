@@ -46,10 +46,13 @@ Windows Registry Editor Version 5.00
 "DynamicScrollbars"=dword:00000000
 ; Устройства: Правописание \ Ввод \ Анализ ввода
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Input\Settings]
-"EnableHwkbAutocorrection2"=dword:00000000
-"EnableHwkbTextPrediction"=dword:00000000
 "InsightsEnabled"=dword:00000000
-"MultilingualEnabled"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\TabletTip\1.7]
+"EnableAutocorrection"=dword:00000000
+"EnableDoubleTapSpace"=dword:00000000
+"EnablePredictionSpaceInsertion"=dword:00000000
+"EnableSpellchecking"=dword:00000000
+"EnableTextPrediction"=dword:00000000
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputPersonalization]
 "RestrictImplicitInkCollection"=dword:00000001
 "RestrictImplicitTextCollection"=dword:00000001
@@ -57,12 +60,6 @@ Windows Registry Editor Version 5.00
 "HarvestContacts"=dword:00000000
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Personalization\Settings]
 "AcceptedPrivacyPolicy"=dword:00000000
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\TabletTip\1.7]
-"EnableAutocorrection"=dword:00000000
-"EnableDoubleTapSpace"=dword:00000000
-"EnablePredictionSpaceInsertion"=dword:00000000
-"EnableSpellchecking"=dword:00000000
-"EnableTextPrediction"=dword:00000000
 ; Уведомления и действия: Отключение уведомлений
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings]
 "NOC_GLOBAL_SETTING_ALLOW_NOTIFICATION_SOUND"=dword:00000000
@@ -72,15 +69,10 @@ Windows Registry Editor Version 5.00
 "Enabled"=dword:00000000
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel]
 "Enabled"=dword:00000000
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.AutoPlay]
-"Enabled"=dword:00000000
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.BackupReminder]
-"Enabled"=dword:00000000
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.SecurityAndMaintenance]
 "Enabled"=dword:00000000
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications]
 "LockScreenToastEnabled"=dword:00000000
-"ToastEnabled"=dword:00000000
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
 "ScoobeSystemSettingEnabled"=dword:00000000
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
@@ -92,22 +84,14 @@ Windows Registry Editor Version 5.00
 "SubscribedContent-338393Enabled"=dword:00000000
 "SubscribedContent-353694Enabled"=dword:00000000
 "SubscribedContent-353696Enabled"=dword:00000000
-; Фоновые приложения
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.MicrosoftEdge_8wekyb3d8bbwe]
-"DisabledByUser"=dword:00000001
-"Disabled"=dword:00000001
-"IgnoreBatterySaver"=dword:00000000
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Windows.SecHealthUI_cw5n1h2txyewy]
-"DisabledByUser"=dword:00000001
-"Disabled"=dword:00000001
-"IgnoreBatterySaver"=dword:00000000
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\windows.immersivecontrolpanel_cw5n1h2txyewy]
-"DisabledByUser"=dword:00000001
-"Disabled"=dword:00000001
-"IgnoreBatterySaver"=dword:00000000
 ; Многозадачность: Отображать предложения на временной шкале
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
 "SubscribedContent-353698Enabled"=dword:00000000
+; Фоновые приложения
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications]
+"GlobalUserDisabled"=dword:00000001
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"BackgroundAppGlobalToggle"=dword:00000000
 ; Только открытые окна
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "MultiTaskingAltTabFilter"=dword:00000003
@@ -122,6 +106,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SearchSettings]
 "IsMSACloudSearchEnabled"=dword:00000000
 "IsAADCloudSearchEnabled"=dword:00000000
+"SafeSearchMode"=dword:00000000
 ; Специальные возможности: Залипание \ Фильтрация
 [HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
 "Flags"=-
@@ -129,6 +114,23 @@ Windows Registry Editor Version 5.00
 "Flags"=-
 [HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
 "Flags"=-
+; GameDVR
+[-HKEY_CURRENT_USER\System\GameConfigStore\Children]
+[-HKEY_CURRENT_USER\System\GameConfigStore\Parents]
+; Ярлыки в центре уведомлений
+[HKEY_CURRENT_USER\Control Panel\Quick Actions\Control Center]
+"AppliedDefaultPins"=dword:00000001
+[HKEY_CURRENT_USER\Control Panel\Quick Actions\Control Center\Unpinned]
+"Microsoft.QuickAction.WiFi"=hex(0):
+"Microsoft.QuickAction.Location"=hex(0):
+"Microsoft.QuickAction.BlueLightReduction"=hex(0):
+"Microsoft.QuickAction.AllSettings"=hex(0):
+"Microsoft.QuickAction.AvailableNetworks"=hex(0):
+"Microsoft.QuickAction.Connect"=hex(0):
+"Microsoft.QuickAction.Project"=hex(0):
+"Microsoft.QuickAction.Vpn"=hex(0):
+"Microsoft.QuickAction.QuietHours"=hex(0):
+"Microsoft.QuickAction.ScreenClipping"=hex(0):
 ; Оформление поиска по умолчанию. Для смешанных типов
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{7FDE1A1E-8B31-49A5-93B8-6BE14CFA4943}]
 "Rev"=dword:00000016
@@ -229,67 +231,6 @@ Windows Registry Editor Version 5.00
 "GroupByKey:FMTID"="{00000000-0000-0000-0000-000000000000}"
 "GroupByKey:PID"=dword:00000000
 "GroupByDirection"=dword:00000001
-; Автозапуск папки носителя
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection]
-@=""
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\AutorunINFLegacyArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\CameraAlternate\ShowPicturesOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\HandleBDBurningOnArrival]
-@="MSTakeNoAction"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\HandleCDBurningOnArrival]
-@="MSTakeNoAction"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\HandleDVDBurningOnArrival]
-@="MSTakeNoAction"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\PlayBluRayOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\PlayCDAudioOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\PlayDVDAudioOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\PlayDVDMovieOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\PlayEnhancedCDOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\PlayEnhancedDVDOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\PlaySuperVideoCDMovieOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\PlayVideoCDMovieOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\StorageOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers]
-@=""
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\AutorunINFLegacyArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\CameraAlternate\ShowPicturesOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\HandleBDBurningOnArrival]
-@="MSTakeNoAction"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\HandleCDBurningOnArrival]
-@="MSTakeNoAction"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\HandleDVDBurningOnArrival]
-@="MSTakeNoAction"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\PlayBluRayOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\PlayCDAudioOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\PlayDVDAudioOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\PlayDVDMovieOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\PlayEnhancedCDOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\PlayEnhancedDVDOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\PlaySuperVideoCDMovieOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\PlayVideoCDMovieOnArrival]
-@="MSOpenFolder"
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\StorageOnArrival]
-@="MSOpenFolder"
 ; ClassicShell
 [HKEY_CURRENT_USER\SOFTWARE\IvoSoft\ClassicStartMenu\Settings]
 "SkipMetro"=dword:00000001

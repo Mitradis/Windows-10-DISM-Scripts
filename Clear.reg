@@ -7,7 +7,6 @@ Windows Registry Editor Version 5.00
 ; Edge Update
 [-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate]
 [-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MicrosoftEdgeUpdate.exe]
-[-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge]
 [-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge Update]
 [HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate]
 "version"="999.999.999.999"
@@ -27,6 +26,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\WIM_SYSTEM\ControlSet001\Control\Session Manager\Memory Management]
 "FeatureSettingsOverride"=dword:00000003
 "FeatureSettingsOverrideMask"=dword:00000003
+; Брокер мониторинга среды выполнения System Guard
+[HKEY_LOCAL_MACHINE\WIM_SYSTEM\ControlSet001\Services\SgrmBroker]
+"Start"=dword:00000004
 ; Служба Advanced Threat Protection в Защитнике Windows
 [HKEY_LOCAL_MACHINE\WIM_SYSTEM\ControlSet001\Services\Sense]
 "Start"=dword:00000004
@@ -48,19 +50,3 @@ Windows Registry Editor Version 5.00
 "EnableVirtualization"=dword:00000000
 "FilterAdministratorToken"=dword:00000000
 "PromptOnSecureDesktop"=dword:00000000
-; Возвращение Просмотр фотографий Windows в список приложений
-[HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Classes\Applications\photoviewer.dll\shell\open]
-"MuiVerb"="@%programfiles%\\Windows Photo Viewer\\photoviewer.dll,-3043"
-[HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Classes\Applications\photoviewer.dll\shell\open\command]
-@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
-  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
-  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
-  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
-  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
-  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
-  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
-  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
-  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
-  00,31,00,00,00
-[HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Classes\Applications\photoviewer.dll\shell\open\DropTarget]
-"Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
