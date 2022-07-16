@@ -1,11 +1,11 @@
 # Windows-10-DISM-Scripts
 Support languages\支持语言\Поддерживаемые языки: EN-US\ZH-CN\RU-RU
 
-Image optimization by removing pre-installed junk packages, disabling update tasks, disabling Defender and other minor changes. All this is done by standard means (DISM commands, CMD queries and changing registry keys).
+Image optimization by removing pre-installed junk packages, disabling update tasks, disabling Defender and other minor changes. All this is done by standard means (DISM commands, CMD queries and changing registry keys). The goal is to get in a natural way (without interfering with system files) the most standard, clean image with unnecessary elements disabled. Disabled in the most efficient, safest and easiest way, without making a bunch of thoughtless and unnecessary edits.
 
-通过删除预安装的垃圾包、禁用更新任务、禁用 Defender 和其他细微更改来优化图像。 所有这些都是通过标准方式（DISM 命令、CMD 查询和更改注册表项）完成的。
+通過刪除預安裝的垃圾包、禁用更新任務、禁用 Defender 和其他細微更改來優化圖像。 所有這些都是通過標準方式（DISM 命令、CMD 查詢和更改註冊表項）完成的。 目標是以自然的方式（不干擾系統文件）獲得最標準、最乾淨的圖像，並禁用不必要的元素。 以最有效、最安全和最簡單的方式禁用，無需進行大量輕率和不必要的編輯。
 
-Оптимизация образа путем удаления предустановленных пакетов программ-мусора, отключение задач обновления, отключение Защитника и другие мелкие изменения. Все это производится стандартными средствами (командами DISM, запросами CMD и изменением ключей реестра).
+Оптимизация образа путем удаления предустановленных пакетов программ-мусора, отключение задач обновления, отключение Защитника и другие мелкие изменения. Все это производится стандартными средствами (командами DISM, запросами CMD и изменением ключей реестра). Цель - получить естественным путем (без вмешательства в системные файлы) максимально стандартный, чистый образ с отключенными ненужными элементами. Отключенными самыми эффективными, безопасными и простыми способами, без внесения кучи бездумных и ненужных правок.
 
 Все подробности тут: [vk.com/@slmp_mod-windows-10-dism-scripts
 ](https://vk.com/@slmp_mod-windows-10-dism-scripts)
