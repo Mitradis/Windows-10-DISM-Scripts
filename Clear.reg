@@ -8,6 +8,11 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate]
 [-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MicrosoftEdgeUpdate.exe]
 [-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge Update]
+[HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView]
+"DisplayName"="Microsoft Edge WebView2 Runtime"
+"DisplayVersion"="92.0.902.67"
+"Version"="999.999.999.999"
+"NoRemove"=dword:00000001
 [HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate]
 "version"="999.999.999.999"
 [HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}]

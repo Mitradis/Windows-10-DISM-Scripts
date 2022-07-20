@@ -182,10 +182,10 @@ TIMEOUT /T 1 /NOBREAK >nul
 title Finality
 rd /s /q "%programdata%\PostClear\Classic Shell"
 del /f /q %programdata%\PostClear\AdvancedRun.exe
+del /f /q %programdata%\PostClear\BytesReplacer.vbs
 del /f /q %programdata%\PostClear\ClassicShell.msi
 del /f /q %programdata%\PostClear\GPM.pol
 del /f /q %programdata%\PostClear\GPU.pol
 del /f /q %programdata%\PostClear\LGPO.exe
-del /f /q %programdata%\PostClear\BytesReplacer.vbs
 del /f /q %programdata%\PostClear\PostClearM.reg
 del /f /q %programdata%\PostClear\Shortcut.vbs
