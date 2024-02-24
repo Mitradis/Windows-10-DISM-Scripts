@@ -11,22 +11,22 @@ if exist Z:\boot.wim (
 ) else (
 	del /f /q Z:\boot.wim
 )
-title Applying Clear.ps1
+title Applying _Clear.ps1
 dism /get-imageinfo /imagefile:Z:\install.wim /index:10
 if %ERRORLEVEL% EQU -1051328239 (
 	del /f /q Z:\EN.txt
 )
-%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy bypass -File Z:\Clear.ps1
+%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy bypass -File Z:\_Clear.ps1
 del /f /q Z:\EN.txt
-del /f /q Z:\Clear.ps1
+del /f /q Z:\_Clear.ps1
 title Load registry
 reg load HKEY_LOCAL_MACHINE\WIM_SOFTWARE Z:\Install\Windows\System32\config\SOFTWARE
 reg load HKEY_LOCAL_MACHINE\WIM_SYSTEM Z:\Install\Windows\System32\config\SYSTEM
 reg load HKEY_LOCAL_MACHINE\WIM_CURRENT_USER Z:\Install\Users\Default\NTUSER.DAT
 TIMEOUT /T 1 /NOBREAK >nul
-title Applying Clear.reg
-reg import Z:\Clear.reg
-del /f /q Z:\Clear.reg
+title Applying _Clear.reg
+reg import Z:\_Clear.reg
+del /f /q Z:\_Clear.reg
 title Disable Secondary Logs
 for /f "tokens=*" %%a in ('reg QUERY "HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels"') do (
 	reg add "%%a" /v Enabled /t REG_DWORD /d 0 /f
