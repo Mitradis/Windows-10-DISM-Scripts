@@ -2,10 +2,22 @@
 Поддерживаемые языки\Support languages\支持的语言: RU-RU\EN-US\ZH-CN
 
 Цель проекта - с помощью стандартных средств (командами DISM, запросами CMD и изменением ключей реестра) создать пересобранный оптимизированный образ в автоматическом отказоустойчивом режиме, исключая человеческий фактор и сопутствующие ошибки при этой процедуре. Таким образом дать возможность каждому создать свою собственную сборку Windows, с гарантированным пониманием ее содержимого и произведенных изменений. Сам набор создавался и поддерживается на принципах минимального вмешательства с максимально эффективными точечными необходимыми изменениями, без вмешательства в системные файлы. Внести те изменения, которые улучшат работу ОС, снизят нагрузку на ПК и расход его ресурсов, сделают использование ОС более комфортным и приятным и при этом сохранят весь ее основной функционал.
+Работа набора поделена на 2 этапа:
+- На первом этапе происходит подготовка образа операционной системы, где из него удаляется мусор, операции со стандартными ярлыками и подготовкой условий для работы второй части. На первом этапе происходит минимальное вмешательство в операционную систему.
+- На втором этапе, который запускается после создания и входа в первую учетную запись, происходит последовательная работа набора с двумя автоматическими перезагрузками. Перед первой перезагрузкой отключается Защитник Windows и его смежные службы. Перед второй перезагрузкой происходит весь последующий набор действий с отключением служб, заменой меню Пуск, удалением задач, применением групповых политик, настройкой параметров системы и другими мелкими изменениями.
+Таким образом сама операционноя система разворачивается стандартно, а все последующие изменения втупают в силу уже после установки.
 
 The goal of the project is to use standard tools (DISM commands, CMD queries and changing registry keys) to create a rebuilt optimized image in an automatic fault-tolerant mode, eliminating the human factor and associated errors during this procedure. Thus, giving everyone the opportunity to create their own Windows build, with a guaranteed understanding of its contents and the changes made. The set itself was created and maintained on the principles of minimal intervention with the most effective targeted necessary changes, without interfering with system files. Make those changes that will improve the operation of the OS, reduce the load on the PC and the consumption of its resources, make using the OS more comfortable and enjoyable, and at the same time retain all its main functionality.
+The work of the set is divided into 2 stages:
+- At the first stage, an image of the operating system is prepared, where garbage is removed from it, operations with standard shortcuts and conditions are prepared for the operation of the second part. The first stage involves minimal intervention into the operating system.
+- At the second stage, which starts after creating and logging into the first account, the set operates sequentially with two automatic reboots. Before the first reboot, Windows Defender and its related services are disabled. Before the second reboot, the entire subsequent set of actions occurs with disabling services, replacing the Start menu, deleting tasks, applying group policies, configuring system settings and other minor changes.
+Thus, the operating system itself is deployed as standard, and all subsequent changes take effect after installation.
 
 该项目的目标是使用标准工具（DISM 命令、CMD 查询和更改注册表项）以自动容错模式创建重建的优化映像，从而消除此过程中的人为因素和相关错误。 因此，每个人都有机会创建自己的 Windows 版本，并保证了解其内容和所做的更改。 该集本身的创建和维护遵循最少干预和最有效的有针对性的必要更改的原则，而不干扰系统文件。 进行这些更改将改善操作系统的操作，减少 PC 上的负载及其资源消耗，使操作系统的使用更加舒适和愉快，同时保留其所有主要功能。
+该集的工作分为2个阶段：
+- 在第一阶段，准备操作系统的映像，从中删除垃圾，为第二部分的操作准备具有标准快捷方式和条件的操作。 第一阶段涉及对操作系统的最小程度的干预。
+- 在创建并登录第一个帐户后开始的第二阶段，设备按顺序运行并自动重新启动两次。 首次重新启动之前，Windows Defender 及其相关服务被禁用。 在第二次重新启动之前，将执行整个后续操作，包括禁用服务、替换“开始”菜单、删除任务、应用组策略、配置系统设置和其他细微更改。
+因此，操作系统本身作为标准部署，所有后续更改在安装后生效。
 
 # Применение:
 - Понадобиться любой диск (если RAM, то нужна поддержка NTFS DISM команд, SoftPerfect RAM Disk и аналоги) с буквой Z размером не менее 14000МБ.
@@ -41,16 +53,13 @@ The goal of the project is to use standard tools (DISM commands, CMD queries and
 - 图像已准备好。
 
 # Установка:
-Стандартная. Только чистая установка. Во время установки данного образа должен быть выключен интернет, пока система не будет автоматически 2 раза перезагружена. Это связано с тем, что вторая часть скриптов срабатывает только после перезагрузки, после создания первой учетной записи. В промежуток когда этого еще не произошло windows скачивает все, что ей прикажет центр обновлений.  
-После установки на рабочем столе будет присутствовать опциональный набор замены всех системных иконок от Windows 7. Прочтите _Readme.txt для его применения.
+Стандартная. Только чистая установка. Во время установки данного образа должен быть выключен интернет, пока система не будет автоматически 2 раза перезагружена.
 
 # Installation:
-Standard. Clean installation only. During installation of this image, the Internet must be turned off until the system is automatically rebooted 2 times. This is due to the fact that the second part of the scripts works only after a reboot, after creating the first account. During the interval when this has not yet happened, Windows downloads everything that the update center tells it to do.  
-After installation, an optional set of replacing all system icons from Windows 7 will be present on the desktop. Read _Readme.txt to use it.
+Standard. Clean installation only. During installation of this image, the Internet must be turned off until the system is automatically rebooted 2 times.
 
 # 安装：
-标准。 仅干净安装。 安装此映像期间，必须关闭 Internet，直到系统自动重新启动 2 次。 这是因为脚本的第二部分仅在创建第一个帐户后重新启动后才起作用。 在这尚未发生的时间间隔内，Windows 会下载更新中心指示其执行的所有操作。  
-安装后，桌面上将出现一组替换 Windows 7 中所有系统图标的可选设置。请阅读 _Readme.txt 以使用它。
+标准。 仅干净安装。 安装此映像期间，必须关闭 Internet，直到系统自动重新启动 2 次。
 
 # Обслуживание:
 Некоторые элементы кастомизации вынесены в отдельную утилиту обслуживания [WinTool](https://github.com/Mitradis/DISM-Scripts-Tools)  (Пуск - Все программы - Служебные).  
