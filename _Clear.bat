@@ -25,7 +25,6 @@ title Load registry
 reg load HKEY_LOCAL_MACHINE\WIM_SOFTWARE Z:\Install\Windows\System32\config\SOFTWARE
 reg load HKEY_LOCAL_MACHINE\WIM_SYSTEM Z:\Install\Windows\System32\config\SYSTEM
 reg load HKEY_LOCAL_MACHINE\WIM_CURRENT_USER Z:\Install\Users\Default\NTUSER.DAT
-TIMEOUT /T 1 /NOBREAK >nul
 
 title Applying _Clear.reg
 reg import Z:\_Clear.reg
@@ -35,7 +34,6 @@ title Disable Secondary Logs
 for /f "tokens=*" %%a in ('reg QUERY "HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels"') do (
 	reg add "%%a" /v Enabled /t REG_DWORD /d 0 /f
 )
-TIMEOUT /T 1 /NOBREAK >nul
 
 title Unload registry
 reg unload HKEY_LOCAL_MACHINE\WIM_CURRENT_USER
@@ -136,7 +134,6 @@ for /f "tokens=*" %%i in ('dir Z:\Install\Windows\WinSxS\Backup /b /a:-d') do (
 title Compress Winre
 Z:\WimOptimize.exe Z:\Install\Windows\System32\Recovery\Winre.wim
 del /f /q Z:\WimOptimize.exe
-TIMEOUT /T 1 /NOBREAK >nul
 
 title Copy PostClear
 if not exist Z:\Install\Windows\ru-RU\explorer.exe.mui (
