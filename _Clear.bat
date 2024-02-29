@@ -106,20 +106,16 @@ move Z:\Calc\calc_64.exe Z:\Install\Windows\SysWOW64\calc.exe
 if exist Z:\Install\Windows\en-US\explorer.exe.mui (
 	copy Z:\Calc\calc.exe.en.mui Z:\Install\Windows\System32\en-US\calc.exe.mui
 	move Z:\Calc\calc.exe.en.mui Z:\Install\Windows\SysWOW64\en-US
-	move Z:\WinMine\en.exe Z:\PostClear\WinMine.exe
 )
 if exist Z:\Install\Windows\zh-CN\explorer.exe.mui (
 	copy Z:\Calc\calc.exe.cn.mui Z:\Install\Windows\System32\zh-CN\calc.exe.mui
 	move Z:\Calc\calc.exe.cn.mui Z:\Install\Windows\SysWOW64\zh-CN
-	move Z:\WinMine\cn.exe Z:\PostClear\WinMine.exe
 )
 if exist Z:\Install\Windows\ru-RU\explorer.exe.mui (
 	copy Z:\Calc\calc.exe.ru.mui Z:\Install\Windows\System32\ru-RU\calc.exe.mui
 	move Z:\Calc\calc.exe.ru.mui Z:\Install\Windows\SysWOW64\ru-RU
-	move Z:\WinMine\ru.exe Z:\PostClear\WinMine.exe
 )
 rd /s /q Z:\Calc
-rd /s /q Z:\WinMine
 
 title GameDVR
 move Z:\KnownGameList.bin %DEL%
