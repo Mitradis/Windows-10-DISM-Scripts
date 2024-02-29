@@ -49,10 +49,10 @@ reg copy %search% %shell%{71689AC1-CC88-45D0-8A22-2943C3E7DFB3}" /s /f
 reg copy %search% %shell%{EA25FBD7-3BF7-409E-B97F-3352240903F4}" /s /f
 reg copy "HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell" "HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\ComDlg" /s /f
 if exist %windir%\en-US\explorer.exe.mui (
-	reg add "HKEY_CURRENT_USER\SOFTWARE\IvoSoft\ClassicShell\Settings" /v Language /t REG_SZ /d "en-US"
+	reg add HKEY_CURRENT_USER\SOFTWARE\IvoSoft\ClassicShell\Settings /v Language /t REG_SZ /d en-US
 )
 if exist %windir%\zh-CN\explorer.exe.mui (
-	reg add "HKEY_CURRENT_USER\SOFTWARE\IvoSoft\ClassicShell\Settings" /v Language /t REG_SZ /d "zh-CN"
+	reg add HKEY_CURRENT_USER\SOFTWARE\IvoSoft\ClassicShell\Settings /v Language /t REG_SZ /d zh-CN
 )
 :Reboot
 

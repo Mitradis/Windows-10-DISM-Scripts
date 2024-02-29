@@ -116,8 +116,8 @@ if exist Z:\Install\Windows\zh-CN\explorer.exe.mui (
 rd /s /q Z:\Calc
 
 title GameDVR
-move Z:\KnownGameList.bin %DEL%
-%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy remotesigned -Command "& Get-Acl -Path Z:\Install\Windows\System32\control.exe | Set-Acl -Path %DEL%"
+move Z:\KnownGameList.bin Z:\Install\Windows\bcastdvr
+%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy remotesigned -Command "& Get-Acl -Path Z:\Install\Windows\System32\control.exe | Set-Acl -Path Z:\Install\Windows\bcastdvr\KnownGameList.bin"
 
 title Clear WinSxS
 for /f "tokens=*" %%i in ('dir Z:\Install\Windows\WinSxS\Backup /b /a:-d') do (
