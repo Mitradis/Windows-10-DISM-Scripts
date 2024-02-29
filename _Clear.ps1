@@ -18,12 +18,15 @@ else
 	dism /delete-image /imagefile:Z:\install.wim /index:2
 	dism /delete-image /imagefile:Z:\install.wim /index:1
 }
+
 $Host.UI.RawUI.WindowTitle = 'Mounting install.wim'
 mkdir Z:\Install
 dism /mount-image /imagefile:Z:\install.wim /index:1 /mountdir:Z:\Install
+
 $Host.UI.RawUI.WindowTitle = 'Adding a response file'
 mkdir Z:\Install\Windows\Panther
 move Z:\unattend.xml Z:\Install\Windows\Panther
+
 $Host.UI.RawUI.WindowTitle = 'Removing capability'
 dism /image:Z:\Install /remove-capability /capabilityname:App.StepsRecorder~~~~0.0.1.0
 dism /image:Z:\Install /remove-capability /capabilityname:App.Support.QuickAssist~~~~0.0.1.0
@@ -38,12 +41,16 @@ foreach ($letter in $letters) {
 		$found=$letter+":\sources\sxs\"
 	}
 }
+
 $Host.UI.RawUI.WindowTitle = 'Installation .NET Framework 3.5'
 dism /image:Z:\Install /enable-feature /featurename:NetFx3 /all /source:$found /limitaccess
+
 $Host.UI.RawUI.WindowTitle = 'Activation Direct Play'
 dism /image:Z:\Install /enable-feature /featurename:DirectPlay /all /source:$found /limitaccess
+
 $Host.UI.RawUI.WindowTitle = 'Disable Defender Definitions'
 dism /image:Z:\Install /disable-feature /featurename:Windows-Defender-Default-Definitions
+
 $Host.UI.RawUI.WindowTitle = 'Removing Pre-Installation Packages'
 $apps=@(
 "Microsoft.549981C3F5F10_1.1911.21713.0_neutral_~_8wekyb3d8bbwe",
