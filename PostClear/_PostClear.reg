@@ -50,6 +50,10 @@ Windows Registry Editor Version 5.00
 ; GameDVR
 [-HKEY_CURRENT_USER\System\GameConfigStore\Children]
 [-HKEY_CURRENT_USER\System\GameConfigStore\Parents]
+; WindowsMediaPlayer
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\MediaPlayer\Preferences]
+"AcceptedPrivacyStatement"=dword:00000001
+"FirstRun"=dword:00000000
 ; Игры - Xbox Game Bar
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR]
 "AppCaptureEnabled"=dword:00000000
