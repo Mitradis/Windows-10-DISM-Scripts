@@ -150,6 +150,7 @@ if exist %programdata%\PostClear\WinHelp.html (
 %programdata%\PostClear\HelpTool.exe %windir%\System32\WindowsPowerShell\v1.0\powershell.exe "%programdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Windows PowerShell.lnk" %windir%
 %programdata%\PostClear\HelpTool.exe %windir%\System32\WindowsPowerShell\v1.0\powershell_ise.exe "%programdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Windows PowerShell ISE.lnk"
 %programdata%\PostClear\HelpTool.exe "%programfiles(x86)%\Microsoft\Edge\Application\msedge.exe" "%programdata%\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk"
+%programdata%\PostClear\HelpTool.exe "%programfiles%\Internet Explorer\iexplore.exe" "%programdata%\Microsoft\Windows\Start Menu\Programs\Accessories\Internet Explorer.lnk" "%programfiles%\Internet Explorer" "\ -Embedding"
 
 title Remove protect
 set KEYSLIST=Launcher.AllAppsDesktopApplication Launcher.Computer Launcher.DesktopPackagedApplication Launcher.ImmersiveApplication Launcher.SystemSettings IE.AssocFile.WEBSITE Microsoft.Website

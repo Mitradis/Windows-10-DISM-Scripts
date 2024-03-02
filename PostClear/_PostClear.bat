@@ -54,8 +54,9 @@ if exist %windir%\en-US\explorer.exe.mui (
 if exist %windir%\zh-CN\explorer.exe.mui (
 	reg add HKEY_CURRENT_USER\SOFTWARE\IvoSoft\ClassicShell\Settings /v Language /t REG_SZ /d zh-CN
 )
-:Reboot
+del /f /q "%appdata%\Microsoft\Windows\Start Menu\Programs\Accessories\Internet Explorer.lnk"
 
+:Reboot
 title Start Explorer
 start %windir%\explorer.exe
 TIMEOUT /T 2 /NOBREAK >nul
