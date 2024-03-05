@@ -34,6 +34,8 @@ dism /image:Z:\Install /remove-capability /capabilityname:Hello.Face.18967~~~~0.
 dism /image:Z:\Install /remove-capability /capabilityname:Hello.Face.Migration.18967~~~~0.0.1.0
 dism /image:Z:\Install /remove-capability /capabilityname:MathRecognizer~~~~0.0.1.0
 dism /image:Z:\Install /remove-capability /capabilityname:OneCoreUAP.OneSync~~~~0.0.1.0
+
+$Host.UI.RawUI.WindowTitle = 'Toggle features'
 $letters=@("D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")
 foreach ($letter in $letters) {
 	if ([System.IO.File]::Exists($letter+":\sources\install.wim"))
@@ -41,14 +43,8 @@ foreach ($letter in $letters) {
 		$found=$letter+":\sources\sxs\"
 	}
 }
-
-$Host.UI.RawUI.WindowTitle = 'Installation .NET Framework 3.5'
 dism /image:Z:\Install /enable-feature /featurename:NetFx3 /all /source:$found /limitaccess
-
-$Host.UI.RawUI.WindowTitle = 'Activation Direct Play'
 dism /image:Z:\Install /enable-feature /featurename:DirectPlay /all /source:$found /limitaccess
-
-$Host.UI.RawUI.WindowTitle = 'Disable Defender Definitions'
 dism /image:Z:\Install /disable-feature /featurename:Windows-Defender-Default-Definitions
 
 $Host.UI.RawUI.WindowTitle = 'Removing Pre-Installation Packages'
