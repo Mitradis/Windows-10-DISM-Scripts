@@ -15,7 +15,7 @@ if not exist %windir%\zh-CN\explorer.exe.mui (
 		takeown /f %%a
 		icacls %%a /grant "%username%":f /c /l /q
 	)
-	%programdata%\PostClear\HelpTool.exe %windir%\System32\InputSwitch.dll "74 1F 48 63 D0 48 8D 0D 5D 14 03 00 48 C1 E2 04 48 03 D1 48 8B CF 48 89 57 58 8B D0 E8 24 02 00 00" "90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90"
+	%programdata%\PostClear\HelpTool.exe %windir%\System32\InputSwitch.dll "74 1F 48 63 D0 48 8D 0D 1D 0A 03 00 48 C1 E2 04 48 03 D1 48 8B CF 48 89 57 58 8B D0 E8 24 02 00 00" "90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90"
 	if exist %windir%\ru-RU\explorer.exe.mui (
 		%programdata%\PostClear\HelpTool.exe %windir%\ImmersiveControlPanel\SystemSettings.dll "00 00 00 00 00 43 00 4E 00 00 00 00 00" "00 00 00 00 00 52 00 55 00 00 00 00 00"
 	) else (
