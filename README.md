@@ -25,7 +25,8 @@ The work of the set is divided into 2 stages:
 - Убедится в отсутствии ошибок в файле Clear.log по поиску: «операция», «оши», «не », «нет» (не все строчки являются ошибками, внимательно читайте их описание).
 - Запустить CMD и выполнить первую команду из файла _Readme.txt.
 - С помощью UltraISO (или аналогов) удалить в .iso образе файл install.wim и добавить получившийся install.esd и boot.wim.
-- Образ готов.
+- Образ готов.  
+[Видео.](https://youtu.be/ThY9nUF76hM)
 
 # Application:
 - The set only works on Windows 10\11. Must have full administrator rights. Optional, but for the duration of execution, it is recommended to disable antivirus monitoring. You will need any disk (if RAM, then you need support for NTFS DISM commands, SoftPerfect RAM Disk and analogues) with the letter Z and a size of at least 14000MB.
