@@ -181,5 +181,5 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersio
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView" /v InstallLocation /t REG_SZ /d "%programfiles(x86)%\Microsoft\EdgeWebView\Application"
 
 title Replace icons kit
-move %programdata%\PostClear\ReplaceIcons "%userprofile%\Desktop\ReplaceIcons"
+xcopy /y /e %programdata%\PostClear\ReplaceIcons "%userprofile%\Desktop\ReplaceIcons\"
 move %programdata%\PostClear\superUser64.exe "%userprofile%\Desktop\ReplaceIcons"
