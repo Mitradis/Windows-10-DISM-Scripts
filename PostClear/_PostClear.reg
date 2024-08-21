@@ -47,6 +47,9 @@ Windows Registry Editor Version 5.00
 ; Всегда отображать все значки в области уведомлений
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
 "EnableAutoTray"=dword:00000000
+; Показывать недавно\часто используемые на панели быстрого доступа
+"ShowRecent"=dword:00000000
+"ShowFrequent"=dword:00000000
 ; GameDVR
 [-HKEY_CURRENT_USER\System\GameConfigStore\Children]
 [-HKEY_CURRENT_USER\System\GameConfigStore\Parents]
@@ -107,6 +110,8 @@ Windows Registry Editor Version 5.00
 ; Панель задач: Просмотр задач
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "ShowTaskViewButton"=dword:00000000
+; Открыть проводник для Этот компьютер
+"LaunchTo"=dword:00000001
 ; Параметры папок - Вид: Пустые диски \ Показать уведомления поставщика
 "HideDrivesWithNoMedia"=dword:00000000
 "ShowSyncProviderNotifications"=dword:00000000

@@ -182,4 +182,5 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersio
 
 title Replace icons kit
 xcopy /y /e %programdata%\PostClear\ReplaceIcons "%userprofile%\Desktop\ReplaceIcons\"
+rd /s /q %programdata%\PostClear\ReplaceIcons
 move %programdata%\PostClear\superUser64.exe "%userprofile%\Desktop\ReplaceIcons"
