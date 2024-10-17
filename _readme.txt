@@ -1,7 +1,9 @@
 dism /export-image /sourceimagefile:Z:\install.wim /sourceindex:1 /destinationimagefile:Z:\install.esd /compress:recovery
 
-Информационные команды:
+Информационные команды (Shell):
 dism /get-imageinfo /imagefile:Z:\install.wim
+mkdir Z:\Install
+dism /mount-image /imagefile:Z:\install.wim /index:1 /mountdir:Z:\Install
 dism /image:Z:\Install /get-provisionedappxpackages > Z:\list1.txt
 dism /image:Z:\Install /get-capabilities > Z:\list2.txt
 dism /image:Z:\Install /get-features > Z:\list3.txt
