@@ -86,9 +86,9 @@ set DELETELIST=%DELETELIST% Z:\Install\Windows\bcastdvr\KnownGameList.bin
 title Processing DELETELIST
 for %%a in (%DELETELIST%) do (
 	if exist %%a\ (
-		Z:\PostClear\superUser64.exe /wrs %windir%\System32\cmd.exe /c rd /s /q %%a
+		Z:\PostClear\superUser64.exe /ws %windir%\System32\cmd.exe /c rd /s /q %%a
 	) else (
-		Z:\PostClear\superUser64.exe /wrs %windir%\System32\cmd.exe /c del /f /q %%a
+		Z:\PostClear\superUser64.exe /ws %windir%\System32\cmd.exe /c del /f /q %%a
 	)
 )
 
@@ -121,7 +121,7 @@ move Z:\KnownGameList.bin Z:\Install\Windows\bcastdvr
 
 title Clear WinSxS
 for /f "tokens=*" %%i in ('dir Z:\Install\Windows\WinSxS\Backup /b /a:-d') do (
-	Z:\PostClear\superUser64.exe /wrs %windir%\System32\cmd.exe /c del /f /q "Z:\Install\Windows\WinSxS\Backup\%%~i"
+	Z:\PostClear\superUser64.exe /ws %windir%\System32\cmd.exe /c del /f /q "Z:\Install\Windows\WinSxS\Backup\%%~i"
 )
 
 title Compress Winre

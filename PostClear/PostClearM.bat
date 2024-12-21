@@ -90,12 +90,12 @@ if exist %windir%\zh-CN\explorer.exe.mui (
 )
 schtasks /change /tn "Microsoft\Windows\WindowsUpdate\Scheduled Start" /disable
 %windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy remotesigned -Command "& Get-Acl -Path %windir%\System32\control.exe | Set-Acl -Path '%windir%\System32\Tasks\Microsoft\Windows\WindowsUpdate\Scheduled Start'"
-%programdata%\PostClear\superUser64.exe /wrs %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Report policies" /f
-%programdata%\PostClear\superUser64.exe /wrs %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Schedule Scan" /f
-%programdata%\PostClear\superUser64.exe /wrs %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task" /f
-%programdata%\PostClear\superUser64.exe /wrs %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Schedule Work" /f
-%programdata%\PostClear\superUser64.exe /wrs %windir%\System32\schtasks.exe /delete /tn Microsoft\Windows\UpdateOrchestrator\UpdateModelTask /f
-%programdata%\PostClear\superUser64.exe /wrs %windir%\System32\schtasks.exe /delete /tn Microsoft\Windows\UpdateOrchestrator\USO_UxBroker /f
+%programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Report policies" /f
+%programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Schedule Scan" /f
+%programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task" /f
+%programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Schedule Work" /f
+%programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn Microsoft\Windows\UpdateOrchestrator\UpdateModelTask /f
+%programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn Microsoft\Windows\UpdateOrchestrator\USO_UxBroker /f
 
 title Applying GroupPolicy
 %programdata%\PostClear\LGPO.exe /m %programdata%\PostClear\GPM.pol
@@ -138,14 +138,17 @@ rd /s /q %programdata%\PostClear\ViVe
 
 title Shortcuts
 if exist %windir%\ru-RU\explorer.exe.mui (
+	set gpedit=Групповые политики
 	set oldcalc=Калькулятор
 ) else (
+	set gpedit=Group Policies
 	set oldcalc=Calculator
 )
 if exist %programdata%\PostClear\WinHelp.html (
 	%programdata%\PostClear\HelpTool.exe %programdata%\PostClear\WinHelp.html "%programdata%\Microsoft\Windows\Start Menu\Programs\System Tools\WinHelp.lnk"
 )
 %programdata%\PostClear\HelpTool.exe %programdata%\PostClear\WinTool.exe "%programdata%\Microsoft\Windows\Start Menu\Programs\System Tools\WinTool.lnk"
+%programdata%\PostClear\HelpTool.exe "%windir%\system32\gpedit.msc" "%programdata%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\%gpedit%.lnk"
 %programdata%\PostClear\HelpTool.exe %windir%\System32\calc.exe "%programdata%\Microsoft\Windows\Start Menu\Programs\Accessories\%oldcalc%.lnk"
 %programdata%\PostClear\HelpTool.exe %windir%\System32\WindowsPowerShell\v1.0\powershell.exe "%programdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Windows PowerShell.lnk" %windir%
 %programdata%\PostClear\HelpTool.exe %windir%\System32\WindowsPowerShell\v1.0\powershell_ise.exe "%programdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Windows PowerShell ISE.lnk"
@@ -156,15 +159,15 @@ title Remove protect
 set KEYSLIST=Launcher.AllAppsDesktopApplication Launcher.Computer Launcher.DesktopPackagedApplication Launcher.ImmersiveApplication Launcher.SystemSettings IE.AssocFile.WEBSITE Microsoft.Website
 for %%a in (%KEYSLIST%) do (
 	reg export HKEY_CLASSES_ROOT\%%a\shellex\ContextMenuHandlers %programdata%\PostClear\_temp.reg /y
-	%programdata%\PostClear\superUser64.exe /wrs %windir%\System32\reg.exe delete HKEY_CLASSES_ROOT\%%a\shellex\ContextMenuHandlers /f
-	%programdata%\PostClear\superUser64.exe /wrs %programdata%\PostClear\HelpTool.exe HKC %%a\shellex "S-1-5-18|S-1-5-32-544|S-1-5-32-545"
+	%programdata%\PostClear\superUser64.exe /ws %windir%\System32\reg.exe delete HKEY_CLASSES_ROOT\%%a\shellex\ContextMenuHandlers /f
+	%programdata%\PostClear\superUser64.exe /ws %programdata%\PostClear\HelpTool.exe HKC %%a\shellex "S-1-5-18|S-1-5-32-544|S-1-5-32-545"
 	reg import %programdata%\PostClear\_temp.reg
 	del /f /q %programdata%\PostClear\_temp.reg
 )
 del /f /q %programdata%\PostClear\HelpTool.exe
 
 title Applying PostClearM.reg
-%programdata%\PostClear\superUser64.exe /wrs %windir%\System32\reg.exe import %programdata%\PostClear\PostClearM.reg
+%programdata%\PostClear\superUser64.exe /ws %windir%\System32\reg.exe import %programdata%\PostClear\PostClearM.reg
 del /f /q %programdata%\PostClear\PostClearM.reg
 
 title Deleting Edge services

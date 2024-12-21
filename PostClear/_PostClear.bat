@@ -13,7 +13,7 @@ if exist %programdata%\PostClear\FirstLoad.reg (
 	title Stopping DiagTrack
 	net stop DiagTrack
 	title Applying FirstLoad.reg
-	%programdata%\PostClear\superUser64.exe /wrs %windir%\System32\reg.exe import %programdata%\PostClear\FirstLoad.reg
+	%programdata%\PostClear\superUser64.exe /ws %windir%\System32\reg.exe import %programdata%\PostClear\FirstLoad.reg
 	title Deleting Defender tasks
 	schtasks /delete /tn "Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /f
 	schtasks /delete /tn "Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /f

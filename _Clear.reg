@@ -4,6 +4,9 @@ Windows Registry Editor Version 5.00
 "OneDriveSetup"="X:\\ProgramData\\PostClear\\_PostClear.bat"
 [HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
 "SecurityHealth"=-
+; Тема Spotlight
+[HKEY_LOCAL_MACHINE\WIM_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsSpotlightFeatures"=dword:00000001
 ; Edge Update
 [-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate]
 [-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MicrosoftEdgeUpdate.exe]

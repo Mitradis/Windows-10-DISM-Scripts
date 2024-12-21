@@ -8,8 +8,8 @@ for %%a in (%REPLACE%) do (
 	if exist "%cd%\%%a" (
 		takeown /f %windir%\SystemResources\%%a
 		icacls %windir%\SystemResources\%%a /grant "%username%":f /c /l /q
-		superUser64.exe /wrs cmd /c "del /f /q %windir%\SystemResources\%%a"
-		superUser64.exe /wrs cmd /c "move "%cd%\%%a" %windir%\SystemResources"
+		superUser64.exe /ws cmd /c "del /f /q %windir%\SystemResources\%%a"
+		superUser64.exe /ws cmd /c "move "%cd%\%%a" %windir%\SystemResources"
 	)
 )
 for %%a in (%REPLACE%) do (
