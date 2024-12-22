@@ -2,6 +2,11 @@ Windows Registry Editor Version 5.00
 ; Отключение автозапуска скрипта
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
 "OneDriveSetup"=-
+; Интеллектуальынй контроль приложений
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost]
+"EnableWebContentEvaluation"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\SmartScreenEnabled]
+@=dword:00000000
 ; Этот компьютер на рабочем столе
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
 "{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000

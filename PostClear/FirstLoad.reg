@@ -9,12 +9,21 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Sense]
 "Start"=dword:00000004
 ; Службы - спутники Защитника
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MsSecCore]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MsSecFlt]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MsSecWfp]
+"Start"=dword:00000004
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdBoot]
 "Start"=dword:00000004
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdFilter]
 "Start"=dword:00000004
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdNisDrv]
 "Start"=dword:00000004
+; Интеллектуальынй контроль приложений
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"SmartScreenEnabled"="Off"
 ; Служба антивирусной программы Microsoft Defender
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WinDefend]
 "Start"=dword:00000004

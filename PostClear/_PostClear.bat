@@ -30,7 +30,7 @@ if exist %programdata%\PostClear\PostClearM.bat (
 )
 
 title Turn-off auto run last apps
-FOR /F "tokens=1,2 delims==" %%s IN ('wmic path win32_useraccount where name^='%username%' get sid /value ^| find /i "SID"') DO SET SID=%%t
+For /F Tokens^=3^ Delims^=^" %%G In ('%windir%\System32\whoami.exe /User /Fo CSV /NH') DO SET SID=%%G
 reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\UserARSO\%SID%" /v OptOut /t REG_DWORD /d 1 /f
 
 title Applying _PostClear.reg
