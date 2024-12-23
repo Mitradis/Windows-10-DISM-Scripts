@@ -2,7 +2,7 @@ Windows Registry Editor Version 5.00
 ; Отключение автозапуска скрипта
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
 "OneDriveSetup"=-
-; Интеллектуальынй контроль приложений
+; Интеллектуальный контроль приложений
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost]
 "EnableWebContentEvaluation"=dword:00000000
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\SmartScreenEnabled]

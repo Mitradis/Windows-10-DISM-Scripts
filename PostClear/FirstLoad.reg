@@ -21,7 +21,7 @@ Windows Registry Editor Version 5.00
 "Start"=dword:00000004
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdNisDrv]
 "Start"=dword:00000004
-; Интеллектуальынй контроль приложений
+; Интеллектуальный контроль приложений
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
 "SmartScreenEnabled"="Off"
 ; Служба антивирусной программы Microsoft Defender
