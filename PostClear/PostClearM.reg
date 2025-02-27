@@ -1,0 +1,699 @@
+Windows Registry Editor Version 5.00
+; UpdateOrchestrator
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Update\TargetingInfo\DynamicInstalled\Hammer.amd64]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Update\TargetingInfo\DynamicInstalled\MSRT.amd64]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Update\TargetingInfo\DynamicInstalled\SedimentPack.amd64]
+; SysMain
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SysMain]
+"Start"=dword:00000004
+; WarpJITSvc
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WarpJITSvc]
+"Start"=dword:00000004
+; Windows Search
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearch]
+"Start"=dword:00000004
+; Xbox Accessory Management Service
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XboxGipSvc]
+"Start"=dword:00000004
+; Адаптер производительности WMI
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wmiApSrv]
+"Start"=dword:00000004
+; Диспетчер подключений удаленного доступа
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RasMan]
+"Start"=dword:00000004
+; Диспетчер скачанных карт
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MapsBroker]
+"Start"=dword:00000004
+; Клиент отслеживания изменившихся связей
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TrkWks]
+"Start"=dword:00000004
+; Координатор распределенных транзакций
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC]
+"Start"=dword:00000004
+; Настройка сервера удаленных рабочих столов
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SessionEnv]
+"Start"=dword:00000004
+; Оптимизация доставки
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DoSvc]
+"Start"=dword:00000004
+; Перенаправитель портов пользовательского режима служб удаленных рабочих столов
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UmRdpService]
+"Start"=dword:00000004
+; Сетевая служба Xbox Live
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XboxNetApiSvc]
+"Start"=dword:00000004
+; Служба PushToInstall Windows
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PushToInstall]
+"Start"=dword:00000004
+; Служба времени Windows
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\W32Time]
+"Start"=dword:00000004
+; Служба географического положения
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lfsvc]
+"Start"=dword:00000004
+; Служба демонстрации магазина
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RetailDemo]
+"Start"=dword:00000004
+; Служба истории файлов
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\fhsvc]
+"Start"=dword:00000004
+; Служба кошелька
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WalletService]
+"Start"=dword:00000004
+; Служба оркестратора обновлений
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UsoSvc]
+"Start"=dword:00000004
+; Служба помощника по совместимости программ
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PcaSvc]
+"Start"=dword:00000004
+; Служба предварительной оценки Windows
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wisvc]
+"Start"=dword:00000004
+; Служба регистрации ошибок Windows
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WerSvc]
+"Start"=dword:00000004
+; Служба регистрации управления устройством
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DmEnrollmentSvc]
+"Start"=dword:00000004
+; Служба сенсорной клавиатуры и панели рукописного ввода
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TabletInputService]
+"Start"=dword:00000004
+; Служба системы push-уведомлений Windows
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WpnService]
+"Start"=dword:00000004
+; Служба удаленного управления Windows (WS-Management)
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WinRM]
+"Start"=dword:00000004
+; Служба хранилища
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\StorSvc]
+"Start"=dword:00000004
+; Службы удаленных рабочих столов
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService]
+"Start"=dword:00000004
+; Сохранение игр на Xbox Live
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XblGameSave]
+"Start"=dword:00000004
+; Узел системы диагностики
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdiSystemHost]
+"Start"=dword:00000004
+; Узел службы диагностики
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdiServiceHost]
+"Start"=dword:00000004
+; Фоновая интеллектуальная служба передачи
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BITS]
+"Start"=dword:00000004
+; Центр обновления Windows
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wuauserv]
+"Start"=dword:00000004
+; Отключение Swapfile
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"SwapfileControl"=dword:00000000
+; Требовать выполнение входа с помощью Windows Hello
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device]
+"DevicePasswordLessBuildVersion"=dword:00000000
+; Разрешить подключение удаленного помощника
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
+"fAllowToGetHelp"=dword:00000000
+; Разрешить установку приложений из любого источника
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock]
+"AllowDevelopmentWithoutDevLicense"=dword:00000001
+; Отключение автоматической синхронизации времени
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
+"Type"="NoSync"
+; Максимальный размер и запрет перезаписи
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\Application]
+"MaxSize"=dword:00100000
+"MaxSizeUpper"=dword:00000000
+"Retention"=dword:ffffffff
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\HardwareEvents]
+"MaxSize"=dword:00100000
+"MaxSizeUpper"=dword:00000000
+"Retention"=dword:ffffffff
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\Internet Explorer]
+"MaxSize"=dword:00100000
+"MaxSizeUpper"=dword:00000000
+"Retention"=dword:ffffffff
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\Key Management Service]
+"MaxSize"=dword:00100000
+"MaxSizeUpper"=dword:00000000
+"Retention"=dword:ffffffff
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\Parameters]
+"MaxSize"=dword:00100000
+"MaxSizeUpper"=dword:00000000
+"Retention"=dword:ffffffff
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\Security]
+"MaxSize"=dword:013f0000
+"MaxSizeUpper"=dword:00000000
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\State]
+"MaxSize"=dword:00100000
+"MaxSizeUpper"=dword:00000000
+"Retention"=dword:ffffffff
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\System]
+"MaxSize"=dword:00100000
+"MaxSizeUpper"=dword:00000000
+"Retention"=dword:ffffffff
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\Windows PowerShell]
+"MaxSize"=dword:00100000
+"MaxSizeUpper"=dword:00000000
+"Retention"=dword:ffffffff
+; Дополнительные библиотеки контекстного меню
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked]
+; EPP (Defender)
+"{09A47860-11B0-4DA5-AFA5-26D86198A780}"=""
+; Sync Center Folder
+"{9C73F5E5-7AE7-4E32-A8E8-8D23B85255BF}"=""
+; Передать на устройство
+"{7AD84985-87B4-4a16-BE58-8B72A5B390F7}"=""
+; PowerShell Win+X
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3]
+"ConsoleHostShortcutTarget"=hex(2):25,00,70,00,72,00,6f,00,67,00,72,00,61,00,\
+  6d,00,64,00,61,00,74,00,61,00,25,00,5c,00,4d,00,69,00,63,00,72,00,6f,00,73,\
+  00,6f,00,66,00,74,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,5c,00,\
+  53,00,74,00,61,00,72,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,50,00,72,\
+  00,6f,00,67,00,72,00,61,00,6d,00,73,00,5c,00,53,00,79,00,73,00,74,00,65,00,\
+  6d,00,20,00,54,00,6f,00,6f,00,6c,00,73,00,5c,00,57,00,69,00,6e,00,64,00,6f,\
+  00,77,00,73,00,20,00,50,00,6f,00,77,00,65,00,72,00,53,00,68,00,65,00,6c,00,\
+  6c,00,2e,00,6c,00,6e,00,6b,00,00,00
+"ConsoleHostShortcutTargetX86"=hex(2):25,00,77,00,69,00,6e,00,64,00,69,00,72,\
+  00,25,00,5c,00,53,00,79,00,73,00,57,00,4f,00,57,00,36,00,34,00,5c,00,57,00,\
+  69,00,6e,00,64,00,6f,00,77,00,73,00,50,00,6f,00,77,00,65,00,72,00,53,00,68,\
+  00,65,00,6c,00,6c,00,5c,00,76,00,31,00,2e,00,30,00,5c,00,70,00,6f,00,77,00,\
+  65,00,72,00,73,00,68,00,65,00,6c,00,6c,00,2e,00,65,00,78,00,65,00,00,00
+; Окно приветствия Edge
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"HideFirstRunExperience"=dword:00000001
+; Контекстное меню. BitLocker
+[-HKEY_CLASSES_ROOT\Drive\shell\encrypt-bde]
+[-HKEY_CLASSES_ROOT\Drive\shell\encrypt-bde-elev]
+; 3D Edit
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.3mf\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.bmp\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.fbx\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.glb\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jfif\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jpe\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jpeg\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.obj\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.ply\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.png\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.stl\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.tif\Shell\3D Edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.tiff\Shell\3D Edit]
+; Управление изображением
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.avci\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.avif\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.bmp\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.dds\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.dib\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.heic\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.heif\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.ico\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jfif\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jpe\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jpeg\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jxr\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.png\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.rle\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.tif\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.tiff\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.wdp\ShellEx\ContextMenuHandlers\ShellImagePreview]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.webp\ShellEx\ContextMenuHandlers\ShellImagePreview]
+; Play with Windows Media Player
+[-HKEY_CLASSES_ROOT\Stack.Audio\shell\Play]
+[-HKEY_CLASSES_ROOT\Stack.Image\shell\Play]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\audio\shell\Play]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Audio\shell\Play]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Image\shell\Play]
+; Add to Windows Media Player list
+[-HKEY_CLASSES_ROOT\MediaCenter.WTVFile\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\Stack.Audio\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\Stack.Image\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\audio\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Audio\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Image\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP.DVR-MSFile\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP.WTVFile\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.3G2\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.3GP\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.ADTS\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.AIFF\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.ASF\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.ASX\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.AU\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.AVI\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.FLAC\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.M2TS\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.M3U\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.M4A\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.MIDI\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.MK3D\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.MKA\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.MKV\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.MOV\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.MP3\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.MP4\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.MPEG\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.TTS\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.WAV\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.WAX\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.WMA\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.WMV\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.WPL\shell\Enqueue]
+[-HKEY_CLASSES_ROOT\WMP11.AssocFile.WVX\shell\Enqueue]
+; 7AD84985-87B4-4a16-BE58-8B72A5B390F7
+[-HKEY_CLASSES_ROOT\Stack.Audio\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\Stack.Image\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\Stack.Video\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.3g2\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.3gp2\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.3gp\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.3gpp\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.aac\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.adt\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.adts\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.dtcp-ip\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.flac\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.lpcm\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.m2t\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.m2ts\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.m4a\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.m4v\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mk3d\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mka\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mkv\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mov\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4v\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mts\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.ts\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.tts\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.wtv\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Audio\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Image\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Video\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\audio\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\image\ShellEx\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\video\shellex\ContextMenuHandlers\PlayTo]
+; Возвращение Просмотр фотографий Windows в список приложений
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open]
+"MuiVerb"="@%programfiles%\\Windows Photo Viewer\\photoviewer.dll,-3043"
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\DropTarget]
+"Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"Classic Start Menu"=-
+; Отключение типового заголовка папок
+[-HKEY_CLASSES_ROOT\Drive\tabsets]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{0b0ba2e3-405f-415e-a6ee-cad625207853}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{0c3794f3-b545-43aa-a329-c37430c58d2a}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{2c7bbec6-c844-4a0a-91fa-cef6f59cfda1}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{549461d3-eb58-4c80-ba29-f1204c4502c3}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{5c4f28b5-f869-4e84-8e60-f11db97c5cc7}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{5fa96407-7e77-483c-ac93-691d05850de8}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{6D9969FF-612F-48EF-9B90-853FD82E6EC2}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{6ef8b050-8a6a-4d79-8344-9dfb5cf391fb}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{7d49d726-3c21-4f05-99aa-fdc2c9474656}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{7F2F5B96-FF74-41da-AFD8-1C78A5F3AEA2}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{80213e82-bcfd-4c4f-8817-bb27601267a9}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{885a186e-a440-4ada-812b-db871b942259}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{8faf9629-1980-46ff-8023-9dceab9c3ee3}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{91475fe5-586b-4eba-8d75-d17434b8cdf6}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{94d6ddcc-4a68-4175-a374-bd584a510b78}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{982725ee-6f47-479e-b447-812bfa7d2e8f}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{B337FD00-9DD5-4635-A6D4-DA33FD102B7A}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{b3690e58-e961-423b-b687-386ebfd83239}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{B372207C-0011-438F-9151-098B2E36B887}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{C4D98F09-6124-4fe0-9942-826416082DA9}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{CD0FC69B-71E2-46e5-9690-5BCD9F57AAB3}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{d674391b-52d9-4e07-834e-67c98610f39d}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{de2b70ec-9bf7-4a93-bd3d-243f7881d492}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{de4f0660-fa10-4b8f-a494-068b20b22307}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{ef87b4cb-f2ce-4785-8658-4ca6c63e38c6}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{0b0ba2e3-405f-415e-a6ee-cad625207853}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{0c3794f3-b545-43aa-a329-c37430c58d2a}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{2c7bbec6-c844-4a0a-91fa-cef6f59cfda1}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{549461d3-eb58-4c80-ba29-f1204c4502c3}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{5c4f28b5-f869-4e84-8e60-f11db97c5cc7}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{5fa96407-7e77-483c-ac93-691d05850de8}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{6D9969FF-612F-48EF-9B90-853FD82E6EC2}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{6ef8b050-8a6a-4d79-8344-9dfb5cf391fb}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{7d49d726-3c21-4f05-99aa-fdc2c9474656}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{7F2F5B96-FF74-41da-AFD8-1C78A5F3AEA2}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{80213e82-bcfd-4c4f-8817-bb27601267a9}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{885a186e-a440-4ada-812b-db871b942259}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{8faf9629-1980-46ff-8023-9dceab9c3ee3}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{91475fe5-586b-4eba-8d75-d17434b8cdf6}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{94d6ddcc-4a68-4175-a374-bd584a510b78}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{982725ee-6f47-479e-b447-812bfa7d2e8f}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{B337FD00-9DD5-4635-A6D4-DA33FD102B7A}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{b3690e58-e961-423b-b687-386ebfd83239}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{B372207C-0011-438F-9151-098B2E36B887}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{C4D98F09-6124-4fe0-9942-826416082DA9}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{CD0FC69B-71E2-46e5-9690-5BCD9F57AAB3}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{d674391b-52d9-4e07-834e-67c98610f39d}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{de2b70ec-9bf7-4a93-bd3d-243f7881d492}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{de4f0660-fa10-4b8f-a494-068b20b22307}]
+"PerceivedType"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{ef87b4cb-f2ce-4785-8658-4ca6c63e38c6}]
+"PerceivedType"=-
+; Дата изменения файла и размер всем файлам
+[HKEY_CLASSES_ROOT\*]
+"InfoTip"="prop:System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\AllFilesystemObjects]
+"InfoTip"="prop:System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\ContentDirectory.container]
+"InfoTip"="prop:System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\ContentDirectory.container.album.musicAlbum]
+"InfoTip"="prop:System.Size;System.Music.Artist;System.Media.Duration;System.DateModified"
+[HKEY_CLASSES_ROOT\ContentDirectory.item.audioItem]
+"InfoTip"="prop:System.Size;System.Music.Artist;System.Media.Duration;System.DateModified"
+[HKEY_CLASSES_ROOT\ContentDirectory.item.imageItem]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;*System.Photo.PeopleNames;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\ContentDirectory.item.videoItem]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\Directory]
+"InfoTip"="prop:System.Comment;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\Drive]
+"InfoTip"="prop:System.FreeSpace;System.Capacity;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\IE.AssocFile.URL]
+"InfoTip"="prop:System.Link.TargetUrl;System.Rating;System.Link.Description;System.Link.Comment;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\InternetShortcut]
+"InfoTip"="prop:System.Link.TargetUrl;System.Rating;System.Link.Description;System.Link.Comment;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\LibraryFolder]
+"InfoTip"="prop:System.DateModified;System.HomeGroupSharingStatus;System.Size"
+[HKEY_CLASSES_ROOT\Msi.Package]
+"InfoTip"="prop:System.Author;System.Title;System.Subject;System.Comment;System.DateModified;System.Size"
+[HKEY_CLASSES_ROOT\Msi.Patch]
+"InfoTip"="prop:System.Author;System.Title;System.Subject;System.Comment;System.DateModified;System.Size"
+[HKEY_CLASSES_ROOT\opensearchresult]
+"InfoTip"="prop:System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\Previous.Versions]
+"InfoTip"="prop:System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\Printers]
+"InfoTip"="prop:System.Printer.Default;System.Printer.Status;System.Printer.QueueSize;System.Printer.Location;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SearchConnectorFolder]
+"InfoTip"="prop:System.DateModified;System.Size"
+[HKEY_CLASSES_ROOT\Stack]
+"InfoTip"="prop:System.ItemNameDisplay;System.FileCount;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.3fr]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.3g2]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.3gp]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.3gp2]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.3gpp]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ari]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.arw]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.asf]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.avci]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.avcs]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.avi]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.avif]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.avifs]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.bay]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.bmp]
+"InfoTip"="prop:*System.DateModified;*System.Image.Dimensions;*System.Size"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.cap]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.cr2]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.cr3]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.crw]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.dcr]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.dcs]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.dds]
+"InfoTip"="prop:*System.DateModified;*System.Image.Dimensions;*System.Size"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.dib]
+"InfoTip"="prop:*System.DateModified;*System.Image.Dimensions;*System.Size"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.dll]
+"InfoTip"="prop:System.FileDescription;System.Company;System.FileVersion;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.dng]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;*System.Photo.PeopleNames;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.doc]
+"InfoTip"="prop:System.Size;System.DateModified;System.Document.PageCount"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.dot]
+"InfoTip"="prop:System.Size;System.DateModified;System.Document.PageCount"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.drf]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.dvr-ms]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.eip]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.erf]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.exe]
+"InfoTip"="prop:System.FileDescription;System.Company;System.FileVersion;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.fff]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.flac]
+"InfoTip"="prop:System.Size;System.Music.Artist;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.fon]
+"InfoTip"="prop:System.Title;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.gif]
+"InfoTip"="prop:*System.DateModified;*System.Image.Dimensions;*System.Size"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.heic]
+"InfoTip"="prop:System.Photo.DateTaken;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.heics]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.heif]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.heifs]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.hif]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ico]
+"InfoTip"="prop:*System.DateModified;*System.Image.Dimensions;*System.Size"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.iiq]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jfif]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;*System.Photo.PeopleNames;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpe]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;*System.Photo.PeopleNames;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpeg]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;*System.Photo.PeopleNames;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;*System.Photo.PeopleNames;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jxr]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.k25]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.kdc]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.m1v]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.m2t]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.m2ts]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.m2v]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.m4a]
+"InfoTip"="prop:System.Size;System.Music.Artist;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.m4b]
+"InfoTip"="prop:System.Size;System.Music.Artist;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.m4p]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.m4v]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mef]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mka]
+"InfoTip"="prop:System.Size;System.Music.Artist;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mkv]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mod]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mos]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mov]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp2]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp2v]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp3]
+"InfoTip"="prop:System.Size;System.Music.Artist;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4v]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mpe]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mpeg]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mpg]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mpv2]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mrw]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mts]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.nef]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.nrw]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.oga]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ogg]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ogm]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ogv]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ogx]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.opus]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.orf]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ori]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.otf]
+"InfoTip"="prop:System.Title;System.Company;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.pef]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.png]
+"InfoTip"="prop:System.Photo.DateTaken;*System.Image.Dimensions;*System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.pot]
+"InfoTip"="prop:System.Size;System.DateModified;System.Document.SlideCount"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ppt]
+"InfoTip"="prop:System.Size;System.DateModified;System.Document.SlideCount"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ptx]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.pxn]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.raf]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.raw]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.rle]
+"InfoTip"="prop:*System.DateModified;*System.Image.Dimensions;*System.Size"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.rw2]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.rwl]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.scf]
+"InfoTip"="prop:System.FileDescription;System.Comment;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.search-ms]
+"InfoTip"="prop:System.Author;System.Keywords;System.FileDescription;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.sr2]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.srf]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.srw]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.sys]
+"InfoTip"="prop:System.FileDescription;System.Company;System.FileVersion;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.tif]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;*System.Photo.PeopleNames;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.tiff]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;*System.Photo.PeopleNames;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.tod]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ts]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ttc]
+"InfoTip"="prop:System.Title;System.Company;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ttf]
+"InfoTip"="prop:System.Title;System.Company;System.Size;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.tts]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.uvu]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.vob]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.wav]
+"InfoTip"="prop:System.Size;System.Music.Artist;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.wdp]
+"InfoTip"="prop:System.Photo.DateTaken;System.Keywords;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.weba]
+"InfoTip"="prop:System.Size;System.Music.Artist;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.webm]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.webp]
+"InfoTip"="prop:System.Photo.DateTaken;System.Rating;*System.Image.Dimensions;*System.Size;System.Title;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.wma]
+"InfoTip"="prop:System.Size;System.Music.Artist;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.wmv]
+"InfoTip"="prop:System.Size;System.Media.Duration;System.OfflineAvailability;System.DateModified"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.x3f]
+"InfoTip"="prop:System.Photo.DateTaken;System.Photo.CameraModel;System.Photo.ISOSpeed;System.Photo.FNumber;System.Photo.ExposureTime;System.Size;System.DateModified"

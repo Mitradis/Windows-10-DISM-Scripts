@@ -1,0 +1,310 @@
+Windows Registry Editor Version 5.00
+; Отключение автозапуска скрипта
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"OneDriveSetup"=-
+; Ускорение автозапуска
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize]
+"WaitForIdleState"=dword:00000000
+; Интеллектуальный контроль приложений
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost]
+"EnableWebContentEvaluation"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\SmartScreenEnabled]
+@=dword:00000000
+; Этот компьютер на рабочем столе
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+; Очистка панели задач от закрепленных ярлыков
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband]
+"Favorites"=-
+; Время и язык - Язык - Клавиатура: Сочетание клавиш
+[-HKEY_CURRENT_USER\Control Panel\Input Method\Hot Keys\00000104]
+[HKEY_CURRENT_USER\Keyboard Layout\Toggle]
+"Language Hotkey"="2"
+"Hotkey"="2"
+"Layout Hotkey"="3"
+; Мышь - Параметры указателя: Включить повышенную точность
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+; Параметры папок - Поиск: Не использовать индекс
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Search\Preferences]
+"ArchivedFiles"=dword:00000000
+"AutoWildCard"=dword:00000001
+"EnableNaturalQuerySyntax"=dword:00000000
+"SystemFolders"=dword:00000001
+"WholeFileSystem"=dword:00000001
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Search\PrimaryProperties\UnindexedLocations]
+"SearchOnly"=dword:00000001
+; Звук - Связь: Действие не требуется
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Multimedia\Audio]
+"UserDuckingPreference"=dword:00000003
+; Сжатие обоев
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"JPEGImportQuality"=dword:00000100
+; Размер и позиция консоли
+[-HKEY_CURRENT_USER\Console\%SystemRoot%_System32_WindowsPowerShell_v1.0_powershell.exe]
+[-HKEY_CURRENT_USER\Console\%SystemRoot%_SysWOW64_WindowsPowerShell_v1.0_powershell.exe]
+[HKEY_CURRENT_USER\Console]
+"ScreenBufferSize"=dword:23290064
+"WindowPosition"=dword:00320032
+"WindowSize"=dword:00140064
+; Всегда отображать все значки в области уведомлений
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"EnableAutoTray"=dword:00000000
+; Показывать недавно\часто используемые на панели быстрого доступа
+"ShowRecent"=dword:00000000
+"ShowFrequent"=dword:00000000
+; GameDVR
+[-HKEY_CURRENT_USER\System\GameConfigStore\Children]
+[-HKEY_CURRENT_USER\System\GameConfigStore\Parents]
+; WindowsMediaPlayer
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\MediaPlayer\Preferences]
+"AcceptedPrivacyStatement"=dword:00000001
+"FirstRun"=dword:00000000
+; Игры - Xbox Game Bar
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR]
+"AppCaptureEnabled"=dword:00000000
+; Ярлыки в центре уведомлений
+[HKEY_CURRENT_USER\Control Panel\Quick Actions\Control Center]
+"AppliedDefaultPins"=dword:00000001
+[HKEY_CURRENT_USER\Control Panel\Quick Actions\Control Center\Unpinned]
+"Microsoft.QuickAction.AllSettings"=hex(0):
+"Microsoft.QuickAction.AvailableNetworks"=hex(0):
+"Microsoft.QuickAction.BlueLightReduction"=hex(0):
+"Microsoft.QuickAction.Connect"=hex(0):
+"Microsoft.QuickAction.Location"=hex(0):
+"Microsoft.QuickAction.Project"=hex(0):
+"Microsoft.QuickAction.QuietHours"=hex(0):
+"Microsoft.QuickAction.ScreenClipping"=hex(0):
+"Microsoft.QuickAction.Vpn"=hex(0):
+"Microsoft.QuickAction.WiFi"=hex(0):
+; Персонализация - Цвета: Заголовки окон и границы окон
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
+"ColorPrevalence"=dword:00000001
+; Windows XP цвет заголовка
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\History\Colors]
+"ColorHistory0"=dword:ffe45600
+; Специальные возможности - Клавиатура: Залипание \ Фильтрация
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+"Flags"=-
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"=-
+[HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
+"Flags"=-
+; Специальные возможности - Дисплей: Автоматическое скрытие полос прокрутки
+[HKEY_CURRENT_USER\Control Panel\Accessibility]
+"DynamicScrollbars"=dword:00000000
+; Конфиденциальность - Дигностика и отзывы: Частота формирования отзывов
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+; Поиск - Разрешения и журнал: Безопасный поиск \ Поиск содержимого в облаке
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SearchSettings]
+"SafeSearchMode"=dword:00000000
+"IsAADCloudSearchEnabled"=dword:00000000
+"IsMSACloudSearchEnabled"=dword:00000000
+; Конфиденциальность - Фоновые приложения: Разрешить работать
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications]
+"GlobalUserDisabled"=dword:00000001
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"BackgroundAppGlobalToggle"=dword:00000000
+; Панель задач: Поиск
+"SearchboxTaskbarMode"=dword:00000000
+"TraySearchBoxVisible"=dword:00000000
+"TraySearchBoxVisibleOnAnyMonitor"=dword:00000000
+; Панель задач: Просмотр задач
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowTaskViewButton"=dword:00000000
+; Открыть проводник для Этот компьютер
+"LaunchTo"=dword:00000001
+; Параметры папок - Вид: Пустые диски \ Показать уведомления поставщика
+"HideDrivesWithNoMedia"=dword:00000000
+"ShowSyncProviderNotifications"=dword:00000000
+; Персонализация - Панель задач: Группировать кнопки на панели задач
+"TaskbarGlomLevel"=dword:00000002
+; Система - Многозадачность: При прикреплении окна показывать \ Только открытые окна
+"SnapAssist"=dword:00000000
+"MultiTaskingAltTabFilter"=dword:00000003
+; Параметры папок: Показывать скрытые \ Не скрывать расширения файлов
+"Hidden"=dword:00000001
+"HideFileExt"=dword:00000000
+; Устройства - Ввод: Правописание \ Ввод \ Анализ ввода
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\TabletTip\1.7]
+"EnableAutocorrection"=dword:00000000
+"EnableDoubleTapSpace"=dword:00000000
+"EnablePredictionSpaceInsertion"=dword:00000000
+"EnableSpellchecking"=dword:00000000
+"EnableTextPrediction"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Input\Settings]
+"InsightsEnabled"=dword:00000000
+; Конфиденциальность - Персонализация рукописного ввода: Знакомство с вами
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Personalization\Settings]
+"AcceptedPrivacyPolicy"=dword:00000000
+; Специальные возможности - Экранный диктор: Разрешить запуск экранного диктора \ Получение описаний ссылок
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Narrator\NoRoam]
+"OnlineServicesEnabled"=dword:00000000
+"WinEnterLaunchEnabled"=dword:00000000
+; Система - Уведомления и действия: Разрешить воспроизведение звуков \ Показывать экран приветствия \ Предложить способы \ Получать советы
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_NOTIFICATION_SOUND"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-310093Enabled"=dword:00000000
+"SubscribedContent-338389Enabled"=dword:00000000
+; Персонализация - Пуск: Иногда показывать предложения
+"SubscribedContent-338388Enabled"=dword:00000000
+; Конфиденциальность - Общие: Показывать рекомендуемое содержимое
+"SubscribedContent-338393Enabled"=dword:00000000
+"SubscribedContent-353694Enabled"=dword:00000000
+"SubscribedContent-353696Enabled"=dword:00000000
+; Система - Многозадачность: Отображать предложения на временной шкале
+"SubscribedContent-353698Enabled"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Microsoft.Windows.InputSwitchToastHandler]
+"Enabled"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel]
+"Enabled"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.SecurityAndMaintenance]
+"Enabled"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.BackupReminder]
+"Enabled"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.LowDisk]
+"Enabled"=dword:00000000
+; Система - Общие возможности: Передача между устройствами
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CDP]
+"RomeSdkChannelUserAuthzPolicy"=dword:00000000
+"CdpSessionUserAuthzPolicy"=dword:00000000
+; Оформление по умолчанию. Для смешанных типов (Документы)
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{5C4F28B5-F869-4E84-8E60-F11DB97C5CC7}]
+"Mode"=dword:00000001
+"LogicalViewMode"=dword:00000003
+"IconSize"=dword:00000021
+"Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
+  25,b7,ef,47,1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,01,00,00,00
+"ColInfo"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,fd,df,df,fd,10,\
+  00,00,00,00,00,00,00,00,00,00,00,03,00,00,00,18,00,00,00,30,f1,25,b7,ef,47,\
+  1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
+  10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
+  a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
+; Для Картинок (Видео)
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{B3690E58-E961-423B-B687-386EBFD83239}]
+"Mode"=dword:00000001
+"LogicalViewMode"=dword:00000003
+"IconSize"=dword:00000060
+"Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
+  25,b7,ef,47,1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,01,00,00,00
+"ColInfo"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,fd,df,df,fd,10,\
+  00,00,00,00,00,00,00,00,00,00,00,03,00,00,00,18,00,00,00,30,f1,25,b7,ef,47,\
+  1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
+  10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
+  a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
+; Для Музыки
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{94D6DDCC-4A68-4175-A374-BD584A510B78}]
+"Mode"=dword:00000004
+"Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
+  25,b7,ef,47,1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,01,00,00,00
+"ColInfo"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,fd,df,df,fd,10,\
+  00,00,00,00,00,00,00,00,00,00,00,03,00,00,00,18,00,00,00,30,f1,25,b7,ef,47,\
+  1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
+  10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
+  a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
+; Результаты поиска для смешанных типов (Документы\Картинки\Видео\Музыка)
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{7FDE1A1E-8B31-49A5-93B8-6BE14CFA4943}]
+"Mode"=dword:00000004
+"Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
+  25,b7,ef,47,1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,01,00,00,00
+"ColInfo"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,fd,df,df,fd,10,\
+  00,00,00,00,00,00,00,00,00,00,00,04,00,00,00,18,00,00,00,30,f1,25,b7,ef,47,\
+  1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,e6,00,00,00,30,f1,25,b7,ef,47,1a,\
+  10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
+  a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00,ed,30,bd,da,43,00,89,47,a7,\
+  f8,d0,13,a4,73,66,22,64,00,00,00,15,02,00,00
+; ClassicShell
+[HKEY_CURRENT_USER\SOFTWARE\IvoSoft\ClassicStartMenu\Settings]
+"SkipMetro"=dword:00000001
+"SkinW7"="Windows Aero"
+"SkinVariationW7"=""
+"SkinOptionsW7"=hex(7):55,00,53,00,45,00,52,00,5f,00,49,00,4d,00,41,00,47,00,\
+  45,00,3d,00,31,00,00,00,53,00,4d,00,41,00,4c,00,4c,00,5f,00,49,00,43,00,4f,\
+  00,4e,00,53,00,3d,00,30,00,00,00,4c,00,41,00,52,00,47,00,45,00,5f,00,46,00,\
+  4f,00,4e,00,54,00,3d,00,30,00,00,00,44,00,49,00,53,00,41,00,42,00,4c,00,45,\
+  00,5f,00,4d,00,41,00,53,00,4b,00,3d,00,31,00,00,00,57,00,48,00,49,00,54,00,\
+  45,00,5f,00,53,00,55,00,42,00,4d,00,45,00,4e,00,55,00,53,00,3d,00,31,00,00,\
+  00,00,00
+"MenuItems7"=hex(7):49,00,74,00,65,00,6d,00,31,00,2e,00,43,00,6f,00,6d,00,6d,\
+  00,61,00,6e,00,64,00,3d,00,75,00,73,00,65,00,72,00,5f,00,66,00,69,00,6c,00,\
+  65,00,73,00,00,00,49,00,74,00,65,00,6d,00,31,00,2e,00,53,00,65,00,74,00,74,\
+  00,69,00,6e,00,67,00,73,00,3d,00,4e,00,4f,00,45,00,58,00,50,00,41,00,4e,00,\
+  44,00,00,00,49,00,74,00,65,00,6d,00,32,00,2e,00,43,00,6f,00,6d,00,6d,00,61,\
+  00,6e,00,64,00,3d,00,75,00,73,00,65,00,72,00,5f,00,64,00,6f,00,63,00,75,00,\
+  6d,00,65,00,6e,00,74,00,73,00,00,00,49,00,74,00,65,00,6d,00,32,00,2e,00,53,\
+  00,65,00,74,00,74,00,69,00,6e,00,67,00,73,00,3d,00,4e,00,4f,00,45,00,58,00,\
+  50,00,41,00,4e,00,44,00,00,00,49,00,74,00,65,00,6d,00,33,00,2e,00,43,00,6f,\
+  00,6d,00,6d,00,61,00,6e,00,64,00,3d,00,75,00,73,00,65,00,72,00,5f,00,70,00,\
+  69,00,63,00,74,00,75,00,72,00,65,00,73,00,00,00,49,00,74,00,65,00,6d,00,33,\
+  00,2e,00,53,00,65,00,74,00,74,00,69,00,6e,00,67,00,73,00,3d,00,4e,00,4f,00,\
+  45,00,58,00,50,00,41,00,4e,00,44,00,00,00,49,00,74,00,65,00,6d,00,34,00,2e,\
+  00,43,00,6f,00,6d,00,6d,00,61,00,6e,00,64,00,3d,00,64,00,6f,00,77,00,6e,00,\
+  6c,00,6f,00,61,00,64,00,73,00,00,00,49,00,74,00,65,00,6d,00,34,00,2e,00,53,\
+  00,65,00,74,00,74,00,69,00,6e,00,67,00,73,00,3d,00,4e,00,4f,00,45,00,58,00,\
+  50,00,41,00,4e,00,44,00,00,00,49,00,74,00,65,00,6d,00,35,00,2e,00,43,00,6f,\
+  00,6d,00,6d,00,61,00,6e,00,64,00,3d,00,73,00,65,00,70,00,61,00,72,00,61,00,\
+  74,00,6f,00,72,00,00,00,49,00,74,00,65,00,6d,00,36,00,2e,00,43,00,6f,00,6d,\
+  00,6d,00,61,00,6e,00,64,00,3d,00,63,00,6f,00,6d,00,70,00,75,00,74,00,65,00,\
+  72,00,00,00,49,00,74,00,65,00,6d,00,36,00,2e,00,53,00,65,00,74,00,74,00,69,\
+  00,6e,00,67,00,73,00,3d,00,4e,00,4f,00,45,00,58,00,50,00,41,00,4e,00,44,00,\
+  00,00,49,00,74,00,65,00,6d,00,37,00,2e,00,43,00,6f,00,6d,00,6d,00,61,00,6e,\
+  00,64,00,3d,00,6e,00,65,00,74,00,77,00,6f,00,72,00,6b,00,00,00,49,00,74,00,\
+  65,00,6d,00,38,00,2e,00,43,00,6f,00,6d,00,6d,00,61,00,6e,00,64,00,3d,00,73,\
+  00,65,00,70,00,61,00,72,00,61,00,74,00,6f,00,72,00,00,00,49,00,74,00,65,00,\
+  6d,00,39,00,2e,00,43,00,6f,00,6d,00,6d,00,61,00,6e,00,64,00,3d,00,63,00,6f,\
+  00,6e,00,74,00,72,00,6f,00,6c,00,5f,00,70,00,61,00,6e,00,65,00,6c,00,00,00,\
+  49,00,74,00,65,00,6d,00,39,00,2e,00,53,00,65,00,74,00,74,00,69,00,6e,00,67,\
+  00,73,00,3d,00,54,00,52,00,41,00,43,00,4b,00,5f,00,52,00,45,00,43,00,45,00,\
+  4e,00,54,00,00,00,49,00,74,00,65,00,6d,00,31,00,30,00,2e,00,43,00,6f,00,6d,\
+  00,6d,00,61,00,6e,00,64,00,3d,00,64,00,65,00,76,00,69,00,63,00,65,00,73,00,\
+  00,00,49,00,74,00,65,00,6d,00,31,00,30,00,2e,00,53,00,65,00,74,00,74,00,69,\
+  00,6e,00,67,00,73,00,3d,00,4e,00,4f,00,45,00,58,00,50,00,41,00,4e,00,44,00,\
+  00,00,49,00,74,00,65,00,6d,00,31,00,31,00,2e,00,43,00,6f,00,6d,00,6d,00,61,\
+  00,6e,00,64,00,3d,00,70,00,63,00,5f,00,73,00,65,00,74,00,74,00,69,00,6e,00,\
+  67,00,73,00,00,00,49,00,74,00,65,00,6d,00,31,00,31,00,2e,00,53,00,65,00,74,\
+  00,74,00,69,00,6e,00,67,00,73,00,3d,00,54,00,52,00,41,00,43,00,4b,00,5f,00,\
+  52,00,45,00,43,00,45,00,4e,00,54,00,00,00,49,00,74,00,65,00,6d,00,31,00,32,\
+  00,2e,00,43,00,6f,00,6d,00,6d,00,61,00,6e,00,64,00,3d,00,72,00,75,00,6e,00,\
+  00,00,00,00
+"GlassOverride"=dword:00000001
+"GlassColor"=dword:00000000
+"GlassOpacity"=dword:00000000
+"EnableExit"=dword:00000000
+"ShiftClick"="Nothing"
+"ShiftWin"="Nothing"
+"RecentMetroApps"=dword:00000000
+"StartScreenShortcut"=dword:00000000
+"HighlightNew"=dword:00000000
+"HighlightNewApps"=dword:00000000
+"CheckWinUpdates"=dword:00000000
+"SearchBox"="Hide"
+"SearchSelect"=dword:00000000
+"SearchTrack"=dword:00000000
+"SearchAutoComplete"=dword:00000000
+"SearchPrograms"=dword:00000000
+"SearchPath"=dword:00000000
+"SearchMetroApps"=dword:00000000
+"SearchMetroSettings"=dword:00000000
+"SearchKeywords"=dword:00000000
+"SearchSubWord"=dword:00000000
+"SearchFiles"=dword:00000000
+"SearchContents"=dword:00000000
+"SearchCategories"=dword:00000000
+"SearchInternet"=dword:00000000
+"MainMenuAnimate"=dword:00000000
+"EnableStartButton"=dword:00000001
+"StartButtonType"="CustomButton"
+"StartButtonPath"="%PROGRAMFILES%\\Classic Shell\\Icons\\Vista.png"
+"StartButtonSize"=dword:00000000
+"StartButtonAlign"=dword:00000000

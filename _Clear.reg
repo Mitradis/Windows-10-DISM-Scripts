@@ -1,0 +1,32 @@
+Windows Registry Editor Version 5.00
+; Автозапуск
+[HKEY_LOCAL_MACHINE\WIM_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"OneDriveSetup"="X:\\ProgramData\\PostClear\\_PostClear.bat"
+[HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"SecurityHealth"=-
+; Тема Spotlight
+[HKEY_LOCAL_MACHINE\WIM_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsSpotlightFeatures"=dword:00000001
+; Edge Update
+[-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate]
+[-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MicrosoftEdgeUpdate.exe]
+[-HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge Update]
+[HKEY_LOCAL_MACHINE\WIM_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView]
+"DisplayName"="Microsoft Edge WebView2 Runtime"
+"NoRemove"=dword:00000001
+; Отключение Meltdown\Spectre патчей
+[HKEY_LOCAL_MACHINE\WIM_SYSTEM\ControlSet001\Control\Session Manager\Memory Management]
+"FeatureSettingsOverride"=dword:00000003
+"FeatureSettingsOverrideMask"=dword:00000003
+; Служба Medic центра обновления Windows
+[HKEY_LOCAL_MACHINE\WIM_SYSTEM\ControlSet001\Services\WaaSMedicSvc]
+"Start"=dword:00000004
+; Конфигурация компьютера - Конфигурация Windows - Параметры безопасности - Локальные политики - Параметры безопасности - Контроль учетных записей: Все администраторы работают в режиме одобрения
+[HKEY_LOCAL_MACHINE\WIM_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000000
+"EnableInstallerDetection"=dword:00000000
+"EnableLUA"=dword:00000000
+"EnableSecureUIAPaths"=dword:00000000
+"EnableVirtualization"=dword:00000000
+"FilterAdministratorToken"=dword:00000000
+"PromptOnSecureDesktop"=dword:00000000

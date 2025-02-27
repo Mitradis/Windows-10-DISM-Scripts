@@ -1,0 +1,74 @@
+Windows Registry Editor Version 5.00
+; Брокер мониторинга среды выполнения System Guard
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SgrmBroker]
+"Start"=dword:00000004
+; Служба "Безопасность Windows"
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SecurityHealthService]
+"Start"=dword:00000004
+; Служба Advanced Threat Protection в Защитнике Windows
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Sense]
+"Start"=dword:00000004
+; Службы - спутники Защитника
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MsSecCore]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MsSecFlt]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MsSecWfp]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdBoot]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdFilter]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdNisDrv]
+"Start"=dword:00000004
+; Интеллектуальный контроль приложений
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"SmartScreenEnabled"="Off"
+; Служба антивирусной программы Microsoft Defender
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WinDefend]
+"Start"=dword:00000004
+; Служба проверки сети антивирусной программы Microsoft Defender
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdNisSvc]
+"Start"=dword:00000004
+; Центр обеспечения безопасности
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wscsvc]
+"Start"=dword:00000004
+; Функциональные возможности для подключенных пользователей и телеметрия
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DiagTrack]
+"Start"=dword:00000004
+; Perfmon
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\DefenderApiLogger]
+"Start"=dword:00000000
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\DefenderAuditLogger]
+"Start"=dword:00000000
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\Diagtrack-Listener]
+"FileMax"=dword:00000002
+"FileCounter"=dword:00000001
+"Start"=dword:00000000
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\NetCore]
+"Start"=dword:00000000
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\RadioMgr]
+"Start"=dword:00000000
+; Windows Update Agent
+[HKEY_CLASSES_ROOT\AppID\{653C5148-4DCE-4905-9CFD-1B23662D3D9E}]
+"LocalService"="wuauserv.Disable"
+; WaaSMedicSvc
+[HKEY_CLASSES_ROOT\AppID\{2ED83BAA-B2FD-43B1-99BF-E6149C622692}]
+"LocalService"="WaaSMedicSvc.Disable"
+; WinDefend
+[HKEY_CLASSES_ROOT\AppID\{2781761E-28E2-4109-99FE-B9D127C57AFE}]
+"LocalService"="WinDefend.Disable"
+; Defender shell
+[HKEY_CLASSES_ROOT\CLSID\{09A47860-11B0-4DA5-AFA5-26D86198A780}\InprocServer32]
+@="C:\\Program Files\\Windows Defender\\shellext.dll.Disable"
+; Mobsync
+[HKEY_CLASSES_ROOT\CLSID\{1A1F4206-0688-4E7F-BE03-D82EC69DF9A5}\LocalServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,6d,00,6f,00,\
+  62,00,73,00,79,00,6e,00,63,00,2e,00,65,00,78,00,65,00,2e,00,44,00,69,00,73,\
+  00,61,00,62,00,6c,00,65,00,00,00
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{1A1F4206-0688-4E7F-BE03-D82EC69DF9A5}\LocalServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,6d,00,6f,00,\
+  62,00,73,00,79,00,6e,00,63,00,2e,00,65,00,78,00,65,00,2e,00,44,00,69,00,73,\
+  00,61,00,62,00,6c,00,65,00,00,00

@@ -1,0 +1,613 @@
+<table align="center" border="1" cellpadding="10" cellspacing="0" style="background-color:#ffffe0; width:800px">
+	<tbody>
+		<tr>
+			<td>
+			<ul>
+				<li><a href="#part1">Предустановочные пакеты</a></li>
+				<li><a href="#part2">Правила Групповых Политик</a></li>
+				<li><a href="#part3">Службы</a></li>
+				<li><a href="#part4">Задачи</a></li>
+				<li><a href="#part5">Прочие элементы</a></li>
+			</ul>
+			<p>При необходимости настройки VPN подключения, установить режим запуска службы &quot;Диспетчер подключений удаленного доступа&quot; на &quot;Вручную&quot;.</p>
+			<p>Полный сброс правил групповых политик:</p>
+			<blockquote>
+			<p><em>RMDIR /S /Q &quot;%WinDir%\System32\GroupPolicyUsers&quot;<br />
+			RMDIR /S /Q &quot;%WinDir%\System32\GroupPolicy&quot;<br />
+			gpupdate /force</em></p>
+			</blockquote>
+			<p>Установка приложений из Microsoft Store без приложения Магазин:</p>
+			<blockquote>
+			<p><em>Найти нужное приложение на официальной странице Microsoft Store и скопировать ссылку на него;<br />
+			Зайти на сайт <a href="https://store.rg-adguard.net" target="_blank">https://store.rg-adguard.net</a> и вставить и поле ссылку на нужное приложение;<br />
+			Скачать все пакеты для целевой системы (пакеты x86/x64 и основной пакет приложения);<br />
+			Установить сначала зависимые пакеты, а потом основной пакет приложения.<br />
+			Если установка пакетов не начинается или завершается с ошибкой, можно попробовать установить их командой в PowerShell: Add-AppxPackage -Path &quot;путь к пакету&quot;.</em></p>
+			<p><em>Приложения могут не запустится если нет подключения к интернету.</em></p>
+			</blockquote>
+			<p>Описание функций WinTool:</p>
+			<ul>
+				<li><em>Сервис:</em>
+				<ul>
+					<li>Перезапустить проводник - закрытие и запуск проводника по команде.</li>
+					<li>Сбросить папки - очищает ключи реестра хранящие параметры отображения для каждой открытой когда либо папки.</li>
+					<li>Сбросить микшер - очищает ключи реестра настроек микшера хранящие параметры громкости всех когда либо запущенных приложений. Может помочь при проблемах воспроизведения в приложениях.</li>
+					<li>Сбросить совместимость - удаляет ключи реестра хранящие настройки совместимости когда либо выставленных для приложений.</li>
+					<li>Сбросить историю - удаляет историю запуска приложений в меню Пуск.</li>
+					<li>IPconfig flushDNS - сбрасывает кеш DNS.</li>
+					<li>UAC - переключение контроля учетных записей.</li>
+					<li>Обновление сертификатов - обновление корневых сертификатов с файла roots.sst на рабочем столе или скачивание его с официальных серверов.</li>
+					<li>Брандмауэр Windows - требуется для работы Служба установки Store.</li>
+					<li>Служба установки Store - поддержка установки .appx пакетов (в т.ч. драйверов), может быть отключена после конечной настройки компьютера.</li>
+					<li>Задача System Restore - возможность удаления автоматически создаваемой задачи создания контрольных точек восстановления. Задача создается при открытия меню восстановления системы.</li>
+					<li>Edge Update - переключение блокировки функции Edge Update. Удаление приложения и установка максимальной версии Edge и Edge Update при блокировке.</li>
+					<li>Скриншот по Win+Shift+S - переключение функции создания избирательного снимка экрана.</li>
+					<li>Стандартный Пуск - переключение функционирования стандартного меню Пуск оболочки системы.</li>
+				</ul>
+				</li>
+				<li><em>Пункты контекстного меню</em> - переключение пунктов контекстного меню которые отключаются по умолчанию.</li>
+				<li><em>Этот компьютер</em> - переключение отображения элементов в окне Этот компьютер.</li>
+			</ul>
+			<p>Ссылки автора: <a href="https://vk.com/mitradis" target="_blank">Автор</a>, <a href="https://github.com/Mitradis/Windows-10-DISM-Scripts" target="_blank">Windows-10-DISM-Scripts</a>, <a href="https://github.com/Mitradis/DISM-Scripts-Tools" target="_blank">DISM-Scripts-Tools</a>. Сторонние: <a href="https://github.com/mspaintmsi/superUser" target="_blank">superUser</a>, <a href="https://github.com/thebookisclosed/ViVe" target="_blank">ViVe</a>, <a href="http://www.classicshell.net" target="_blank">ClassicShell</a>, <a href="https://learn.microsoft.com" target="_blank">LGPO</a>.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<table align="center" border="1" cellpadding="10" cellspacing="0" style="background-color:#ffffe0; width:800px">
+	<tbody>
+		<tr>
+			<td>
+			<p><a id="part1" name="part1"><strong>Удалены следующие предустановочные пакеты:</strong></a></p>
+			<ul>
+				<li>Microsoft.549981C3F5F10_1.1911.21713.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.BingWeather_4.25.20211.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.GetHelp_10.1706.13331.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.Getstarted_8.2.22942.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.Microsoft3DViewer_6.1908.2042.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.MicrosoftOfficeHub_18.1903.1152.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.MicrosoftSolitaireCollection_4.4.8204.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.MicrosoftStickyNotes_3.6.73.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.MixedReality.Portal_2000.19081.1301.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.MSPaint_2019.729.2301.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.Office.OneNote_16001.12026.20112.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.People_2019.305.632.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.ScreenSketch_2019.904.1644.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.SkypeApp_14.53.77.0_neutral_~_kzf8qxf38zg5c</li>
+				<li>Microsoft.StorePurchaseApp_11811.1001.1813.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.Wallet_2.4.18324.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.Windows.Photos_2019.19071.12548.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.WindowsAlarms_2019.807.41.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.WindowsCalculator_2020.1906.55.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.WindowsCamera_2018.826.98.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>microsoft.windowscommunicationsapps_16005.11629.20316.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.WindowsFeedbackHub_2019.1111.2029.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.WindowsMaps_2019.716.2316.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.WindowsSoundRecorder_2019.716.2313.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.WindowsStore_11910.1002.513.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.Xbox.TCUI_1.23.28002.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.XboxApp_48.49.31001.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.XboxGameOverlay_1.46.11001.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.XboxGamingOverlay_2.34.28001.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.XboxIdentityProvider_12.50.6001.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.XboxSpeechToTextOverlay_1.17.29001.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.YourPhone_2019.430.2026.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.ZuneMusic_2019.19071.19011.0_neutral_~_8wekyb3d8bbwe</li>
+				<li>Microsoft.ZuneVideo_2019.19071.19011.0_neutral_~_8wekyb3d8bbwe</li>
+			</ul>
+			<p>Отключены следующие возможности:</p>
+			<ul>
+				<li>App.StepsRecorder~~~~0.0.1.0</li>
+				<li>App.Support.QuickAssist~~~~0.0.1.0</li>
+				<li>Hello.Face.18967~~~~0.0.1.0</li>
+				<li>Hello.Face.Migration.18967~~~~0.0.1.0</li>
+				<li>MathRecognizer~~~~0.0.1.0</li>
+				<li>OneCoreUAP.OneSync~~~~0.0.1.0</li>
+			</ul>
+			<p>Включены следующие особенности:</p>
+			<ul>
+				<li>NetFx3</li>
+				<li>DirectPlay</li>
+			</ul>
+			<p>Отключены следующие особенности:</p>
+			<ul>
+				<li>Windows-Defender-Default-Definitions</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<table align="center" border="1" cellpadding="10" cellspacing="0" style="background-color:#ffffe0; width:800px">
+	<tbody>
+		<tr>
+			<td>
+			<p><a id="part2" name="part2"><strong>Внесены следующие изменения в правила групповых политик (gpedit.msc):</strong></a></p>
+			<p><em>Конфигурация компьютера - Административные шаблоны - Компоненты Windows:</em></p>
+			<ul>
+				<li>Application Guard в Microsoft Defender:
+				<ul>
+					<li>Включить Application Guard в Microsoft Defender. (Откл.)</li>
+				</ul>
+				</li>
+				<li>NetMeeting:
+				<ul>
+					<li>Запретить удаленное управление рабочим столом. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>OneDrive:
+				<ul>
+					<li>Запретить использование. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>SmartScreen Защитника Windows - Explorer:
+				<ul>
+					<li>Настроить компонент. (Отключить рекомендации)</li>
+					<li>Настроить функцию &quot;SmartScreen&quot;. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Windows Ink Workspace:
+				<ul>
+					<li>Разрешить рекомендуемые приложения. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Антивирусная программа Microsoft Defender:
+				<ul>
+					<li>Выключить антивирусную программу. (Вкл.)</li>
+					<li>Разрешить постоянную работу службы защиты. (Откл.)</li>
+					<li>Защита в режиме реального времени:
+					<ul>
+						<li>Выключить защиту в реальном времени. (Вкл.)</li>
+						<li>Включить наблюдение за поведением. (Откл.)</li>
+						<li>Проверять все загруженные файлы. (Откл.)</li>
+						<li>Отслеживать активность программ и файлов. (Откл.)</li>
+					</ul>
+					</li>
+					<li>Обновление службы безопасности:
+					<ul>
+						<li>Разрешить обновления службы. (Откл.)</li>
+						<li>Проверять наличие последней версии. (Откл.)</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+				<li>Безопасность Windows - Уведомления:
+				<ul>
+					<li>Скрыть некритические уведомления. (Вкл.)</li>
+					<li>Скрыть все уведомления. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Биометрия:
+				<ul>
+					<li>Разрешение. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Ввод текста:
+				<ul>
+					<li>Улучшение распознавания ввода. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Встроенная справка:
+				<ul>
+					<li>Отключение активной справки. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Голосовые функции:
+				<ul>
+					<li>Разрешить автоматическое обновление данных речи. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Запись и трансляция игр Windows:
+				<ul>
+					<li>Включает или отключает запись и трансляцию. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Календарь Windows:
+				<ul>
+					<li>Выключить календарь. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Карты:
+				<ul>
+					<li>Выключить автоматическое скачивание. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Магазин:
+				<ul>
+					<li>Выключить автоматическую загрузку. (Вкл.)</li>
+					<li>Выключить предложение обновления. (Вкл.)</li>
+					<li>Отключить приложение Store. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Найти:
+				<ul>
+					<li>Разрешить поиск в облаке. (Откл.)</li>
+					<li>Разрешить использование Кортаны. (Откл.)</li>
+					<li>Запретить поиск в Интернете. (Вкл.)</li>
+					<li>Не выполнять поиск в Интернете. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Новости и интересы:
+				<ul>
+					<li>Включить новости и интересы. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Обмен сообщениями:
+				<ul>
+					<li>Разрешить синхронизацию. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Оптимизация доставки:
+				<ul>
+					<li>Режим скачивания. (Только HTTP)</li>
+				</ul>
+				</li>
+				<li>Отчеты об ошибках Windows:
+				<ul>
+					<li>Отключить отчеты об ошибках. (Вкл.)</li>
+					<li>Не отправлять дополнительные данные. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Проводник - Предыдущие версии:
+				<ul>
+					<li>Скрыть. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Сборки для сбора данных и предварительные сборки:
+				<ul>
+					<li>Разрешить обработку аналитики. (Откл.)</li>
+					<li>Разрешить телеметрию. (Безопасность)</li>
+					<li>Не показывать уведомления об отзывах. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Синхронизация параметров:
+				<ul>
+					<li>Не синхронизировать. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Совместимость приложений:
+				<ul>
+					<li>Отключение помощника по совместимости программ. (Вкл.)</li>
+					<li>Отключение сборщика перечней. (Вкл.)</li>
+					<li>Отключение обработчика совместимости SwitchBack. (Вкл.)</li>
+					<li>Отключение средства записи действий. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Содержимое облака:
+				<ul>
+					<li>Не показывать советы по использованию. (Вкл.)</li>
+					<li>Выключить возможности потребителя. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Центр обеспечения безопасности:
+				<ul>
+					<li>Включить центр обеспечения безопасности. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Центр обновления Windows:
+				<ul>
+					<li>Настройка автоматического обновления. (Откл.)</li>
+					<li>Запретить доступ для использования любых средств. (Вкл.)</li>
+				</ul>
+				</li>
+			</ul>
+			<p><em>Конфигурация компьютера - Административные шаблоны - Панель управления:</em></p>
+			<ul>
+				<li>Разрешить онлайн-советы. (Откл.)</li>
+				<li>Язык и региональные стандарты - Персонализация рукописного текста:
+				<ul>
+					<li>Отключить автоматическое обучение. (Вкл.)</li>
+				</ul>
+				</li>
+			</ul>
+			<p><em>Конфигурация компьютера - Административные шаблоны - Система:</em></p>
+			<ul>
+				<li>Device Guard:
+				<ul>
+					<li>Включить средство обеспечения безопасности (Откл.)</li>
+				</ul>
+				</li>
+				<li>Диагностика:
+				<ul>
+					<li>Быстродействие Windows PerfTrack:
+					<ul>
+						<li>Включить или отключить PertTrack. (Откл.)</li>
+					</ul>
+					</li>
+					<li>Диагностика быстродействия завершения работы Windows:
+					<ul>
+						<li>Настройки режима запуска сценария. (Откл.)</li>
+					</ul>
+					</li>
+					<li>Диагностика быстродействия загрузки Windows:
+					<ul>
+						<li>Настройки режима запуска сценария. (Откл.)</li>
+					</ul>
+					</li>
+					<li>Диагностика производительности ждущего режима:
+					<ul>
+						<li>Настройки режима запуска сценария. (Откл.)</li>
+					</ul>
+					</li>
+					<li>Диагностика скорости отклика системы Windows:
+					<ul>
+						<li>Настройки режима запуска сценария. (Откл.)</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+				<li>Контроль памяти:
+				<ul>
+					<li>Разрешить контроль памяти. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Политики ОС:
+				<ul>
+					<li>Разрешить журнал буфера обмена. (Откл.)</li>
+					<li>Разрешить синхронизацию буфера обмена между устройствами. (Откл.)</li>
+					<li>Включает веб-канал активности. (Откл.)</li>
+					<li>Разрешить публикацию действий пользователя. (Откл.)</li>
+					<li>Разрешить загрузку действий пользователя. (Откл.)</li>
+				</ul>
+				</li>
+				<li>Управление связью через Интернет - Параметры связи через Интернет:
+				<ul>
+					<li>Отключить отчеты об ошибках. (Вкл.)</li>
+					<li>Отключить программу по улучшению качества. (Вкл.)</li>
+					<li>Отключить центр справки и поддержки &quot;Знаете ли вы?&quot;. (Вкл.)</li>
+					<li>Отключить обновление файлов содержимого. (Вкл.)</li>
+					<li>Отключить доступ к Store. (Вкл.)</li>
+					<li>Отключить программу улучшения качества. (Вкл.)</li>
+				</ul>
+				</li>
+			</ul>
+			<p><em>Конфигурация компьютера - Конфигурация Windows - Параметры безопасности - Локальные политики:</em></p>
+			<ul>
+				<li>Параметры безопасности:
+				<ul>
+					<li>Контроль учетных записей: Все администраторы работают в режиме одобрения</li>
+				</ul>
+				</li>
+			</ul>
+			<p><em>Конфигурация пользователя - Административные шаблоны - Компоненты Windows:</em></p>
+			<ul>
+				<li>Windows Copilot:
+				<ul>
+					<li>Отключить Windows Copilot. (Вкл.)</li>
+				</ul>
+				</li>
+				<li>Содержимое облака:
+				<ul>
+					<li>Отключение всех функций. (Вкл.)</li>
+				</ul>
+				</li>
+			</ul>
+			<p><em>Конфигурация пользователя - Административные шаблоны - Меню &quot;Пуск&quot; и панель задач:</em></p>
+			<ul>
+				<li>Удалить раздел &quot;Люди&quot; с панели задач. (Вкл.)</li>
+				<li>Удалить значок &quot;Провести собрание&quot;. (Вкл.)</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<table align="center" border="1" cellpadding="10" cellspacing="0" style="background-color:#ffffe0; width:800px">
+	<tbody>
+		<tr>
+			<td>
+			<p><a id="part3" name="part3"><strong>Отключены следующие службы:</strong></a></p>
+			<blockquote>
+			<p><em>; SysMain<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SysMain]<br />
+			; WarpJITSvc<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WarpJITSvc]<br />
+			; Windows Search<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearch]<br />
+			; Xbox Accessory Management Service<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XboxGipSvc]<br />
+			; Адаптер производительности WMI<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wmiApSrv]<br />
+			; Диспетчер скачанных карт<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MapsBroker]<br />
+			; Клиент отслеживания изменившихся связей<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TrkWks]<br />
+			; Координатор распределенных транзакций<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC]<br />
+			; Оптимизация доставки<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DoSvc]<br />
+			; Сетевая служба Xbox Live<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XboxNetApiSvc]<br />
+			; Служба PushToInstall Windows<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PushToInstall]<br />
+			; Служба времени Windows<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\W32Time]<br />
+			; Служба географического положения<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lfsvc]<br />
+			; Служба демонстрации магазина<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RetailDemo]<br />
+			; Служба истории файлов<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\fhsvc]<br />
+			; Служба кошелька<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WalletService]<br />
+			; Служба помощника по совместимости программ<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PcaSvc]<br />
+			; Служба предварительной оценки Windows<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wisvc]<br />
+			; Служба регистрации ошибок Windows<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WerSvc]<br />
+			; Служба сенсорной клавиатуры и панели рукописного ввода<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TabletInputService]<br />
+			; Служба системы push-уведомлений Windows<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WpnService]<br />
+			; Служба хранилища<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\StorSvc]<br />
+			; Сохранение игр на Xbox Live<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XblGameSave]<br />
+			; Узел системы диагностики<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdiSystemHost]<br />
+			; Узел службы диагностики<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdiServiceHost]<br />
+			; Функциональные возможности для подключенных пользователей и телеметрия<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DiagTrack]</em></p>
+			</blockquote>
+			<p><strong>Следующие службы относящиеся к &quot;Удаленный рабочий стол&quot;:</strong></p>
+			<blockquote>
+			<p><em>; Диспетчер подключений удаленного доступа<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RasMan]<br />
+			; Настройка сервера удаленных рабочих столов<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SessionEnv]<br />
+			; Перенаправитель портов пользовательского режима служб удаленных рабочих столов<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UmRdpService]<br />
+			; Служба удаленного управления Windows (WS-Management)<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WinRM]<br />
+			; Службы удаленных рабочих столов<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService]</em></p>
+			</blockquote>
+			<p><strong>Следующие службы относящиеся к &quot;Центр обновления Windows&quot;:</strong></p>
+			<blockquote>
+			<p><em>; Служба Medic центра обновления Windows<br />
+			[HKEY_LOCAL_MACHINE\WIM_SYSTEM\ControlSet001\Services\WaaSMedicSvc]<br />
+			; Служба оркестратора обновлений<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UsoSvc]<br />
+			; Служба регистрации управления устройством<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DmEnrollmentSvc]<br />
+			; Фоновая интеллектуальная служба передачи<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BITS]<br />
+			; Центр обновления Windows<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wuauserv]</em></p>
+			</blockquote>
+			<p><strong>Следующие службы относящиеся к &quot;Защитник Windows&quot;:</strong></p>
+			<blockquote>
+			<p><em>; Брокер мониторинга среды выполнения System Guard<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SgrmBroker]<br />
+			; Служба &quot;Безопасность Windows&quot;<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SecurityHealthService]<br />
+			; Служба Advanced Threat Protection в Защитнике Windows<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Sense]<br />
+			; Службы - спутники Защитника<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MsSecCore]<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MsSecFlt]<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MsSecWfp]<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdBoot]<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdFilter]<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdNisDrv]<br />
+			; Служба антивирусной программы Microsoft Defender<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WinDefend]<br />
+			; Служба проверки сети антивирусной программы Microsoft Defender<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdNisSvc]<br />
+			; Центр обеспечения безопасности<br />
+			[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wscsvc]</em></p>
+			</blockquote>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<table align="center" border="1" cellpadding="10" cellspacing="0" style="background-color:#ffffe0; width:800px">
+	<tbody>
+		<tr>
+			<td>
+			<p><a id="part4" name="part4"><strong>Удалены следующие задачи:</strong></a></p>
+			<blockquote>
+			<p><em>Microsoft\XblGameSave\XblGameSaveTask<br />
+			Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser<br />
+			Microsoft\Windows\Application Experience\PcaPatchDbTask<br />
+			Microsoft\Windows\Application Experience\ProgramDataUpdater<br />
+			Microsoft\Windows\Application Experience\StartupAppTask<br />
+			Microsoft\Windows\Autochk\Proxy<br />
+			Microsoft\Windows\CloudExperienceHost\CreateObjectTask<br />
+			Microsoft\Windows\Customer Experience Improvement Program\Consolidator<br />
+			Microsoft\Windows\Customer Experience Improvement Program\UsbCeip<br />
+			Microsoft\Windows\Diagnosis\Scheduled<br />
+			Microsoft\Windows\DiskCleanup\SilentCleanup<br />
+			Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticDataCollector<br />
+			Microsoft\Windows\ExploitGuard\ExploitGuard MDM policy Refresh<br />
+			Microsoft\Windows\Feedback\Siuf\DmClient<br />
+			Microsoft\Windows\Feedback\Siuf\DmClientOnScenarioDownload<br />
+			Microsoft\Windows\FileHistory\File History (maintenance mode)<br />
+			Microsoft\Windows\Flighting\FeatureConfig\ReconcileFeatures<br />
+			Microsoft\Windows\Flighting\FeatureConfig\UsageDataFlushing<br />
+			Microsoft\Windows\Flighting\FeatureConfig\UsageDataReporting<br />
+			Microsoft\Windows\Flighting\OneSettings\RefreshCache<br />
+			Microsoft\Windows\HelloFace\FODCleanupTask<br />
+			Microsoft\Windows\International\Synchronize Language Settings<br />
+			Microsoft\Windows\LanguageComponentsInstaller\Installation<br />
+			Microsoft\Windows\Maintenance\WinSAT<br />
+			Microsoft\Windows\Maps\MapsToastTask<br />
+			Microsoft\Windows\Maps\MapsUpdateTask<br />
+			Microsoft\Windows\MemoryDiagnostic\ProcessMemoryDiagnosticEvents<br />
+			Microsoft\Windows\MemoryDiagnostic\RunFullMemoryDiagnostic<br />
+			Microsoft\Windows\NetTrace\GatherNetworkInfo<br />
+			Microsoft\Windows\Offline Files\Background Synchronization<br />
+			Microsoft\Windows\Offline Files\Logon Synchronization<br />
+			Microsoft\Windows\PI\Sqm-Tasks<br />
+			Microsoft\Windows\Power Efficiency Diagnostics\AnalyzeSystem<br />
+			Microsoft\Windows\PushToInstall\LoginCheck<br />
+			Microsoft\Windows\PushToInstall\Registration<br />
+			Microsoft\Windows\Registry\RegIdleBackup<br />
+			Microsoft\Windows\RetailDemo\CleanupOfflineContent<br />
+			Microsoft\Windows\Setup\SetupCleanupTask<br />
+			Microsoft\Windows\Shell\FamilySafetyMonitor<br />
+			Microsoft\Windows\Shell\FamilySafetyRefreshTask<br />
+			Microsoft\Windows\Shell\IndexerAutomaticMaintenance<br />
+			Microsoft\Windows\Speech\SpeechModelDownloadTask<br />
+			Microsoft\Windows\Sysmain\WsSwapAssessmentTask<br />
+			Microsoft\Windows\SystemRestore\SR<br />
+			Microsoft\Windows\Time Synchronization\ForceSynchronizeTime<br />
+			Microsoft\Windows\Time Synchronization\SynchronizeTime<br />
+			Microsoft\Windows\Time Zone\SynchronizeTimeZone<br />
+			Microsoft\Windows\UNP\RunUpdateNotificationMgr<br />
+			Microsoft\Windows\UpdateOrchestrator\Report policies<br />
+			Microsoft\Windows\UpdateOrchestrator\Schedule Scan<br />
+			Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task<br />
+			Microsoft\Windows\UpdateOrchestrator\Schedule Work<br />
+			Microsoft\Windows\UpdateOrchestrator\UpdateModelTask<br />
+			Microsoft\Windows\UpdateOrchestrator\USO_UxBroker<br />
+			Microsoft\Windows\User Profile Service\HiveUploadTask<br />
+			Microsoft\Windows\WaaSMedic\PerformRemediation<br />
+			Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance<br />
+			Microsoft\Windows\Windows Defender\Windows Defender Cleanup<br />
+			Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan<br />
+			Microsoft\Windows\Windows Defender\Windows Defender Verification<br />
+			Microsoft\Windows\Windows Error Reporting\QueueReporting<br />
+			Microsoft\Windows\WindowsUpdate\Scheduled Start</em></p>
+			</blockquote>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<table align="center" border="1" cellpadding="10" cellspacing="0" style="background-color:#ffffe0; width:800px">
+	<tbody>
+		<tr>
+			<td>
+			<p><a id="part5" name="part5"><strong>Отключены следующие службы системного монитора (Perfmon):</strong></a></p>
+			<blockquote>
+			<p><em>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\DefenderApiLogger<br />
+			HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\DefenderAuditLogger<br />
+			HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\Diagtrack-Listener<br />
+			HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\NetCore<br />
+			HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\RadioMgr</em></p>
+			</blockquote>
+			<p><strong>Отключены следующие ссылки на файлы в реестре:</strong></p>
+			<blockquote>
+			<p><em><u>Windows Update Agent:</u><br />
+			HKEY_CLASSES_ROOT\AppID\{653C5148-4DCE-4905-9CFD-1B23662D3D9E}<br />
+			LocalService</em></p>
+			<p><em><u>WaaSMedicSvc:</u><br />
+			HKEY_CLASSES_ROOT\AppID\{2ED83BAA-B2FD-43B1-99BF-E6149C622692}<br />
+			LocalService</em></p>
+			<p><em><u>WinDefend:</u><br />
+			HKEY_CLASSES_ROOT\AppID\{2781761E-28E2-4109-99FE-B9D127C57AFE}<br />
+			LocalService</em></p>
+			<p><em><u>Defender shell:</u><br />
+			HKEY_CLASSES_ROOT\CLSID\{09A47860-11B0-4DA5-AFA5-26D86198A780}\InprocServer32</em></p>
+			<p><em><u>Mobsync:</u><br />
+			HKEY_CLASSES_ROOT\CLSID\{1A1F4206-0688-4E7F-BE03-D82EC69DF9A5}\LocalServer32<br />
+			HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{1A1F4206-0688-4E7F-BE03-D82EC69DF9A5}\LocalServer32</em></p>
+			</blockquote>
+			</td>
+		</tr>
+	</tbody>
+</table>
