@@ -179,7 +179,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CDP]
 "RomeSdkChannelUserAuthzPolicy"=dword:00000000
 "CdpSessionUserAuthzPolicy"=dword:00000000
-; Оформление по умолчанию. Для смешанных типов (Документы)
+; Оформление по умолчанию. Для смешанных типов (5c4f28b5-f869-4e84-8e60-f11db97c5cc7) \ Документы (7d49d726-3c21-4f05-99aa-fdc2c9474656)
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{5C4F28B5-F869-4E84-8E60-F11DB97C5CC7}]
 "Mode"=dword:00000001
 "LogicalViewMode"=dword:00000003
@@ -191,7 +191,7 @@ Windows Registry Editor Version 5.00
   1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
   10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
-; Для Картинок (Видео)
+; Для Изображений (b3690e58-e961-423b-b687-386ebfd83239) \ Видео (5fa96407-7e77-483c-ac93-691d05850de8)
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{B3690E58-E961-423B-B687-386EBFD83239}]
 "Mode"=dword:00000001
 "LogicalViewMode"=dword:00000003
@@ -203,7 +203,7 @@ Windows Registry Editor Version 5.00
   1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
   10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
-; Для Музыки
+; Для Музыки (94d6ddcc-4a68-4175-a374-bd584a510b78)
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{94D6DDCC-4A68-4175-A374-BD584A510B78}]
 "Mode"=dword:00000004
 "Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
@@ -213,7 +213,7 @@ Windows Registry Editor Version 5.00
   1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
   10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
-; Результаты поиска для смешанных типов (Документы\Картинки\Видео\Музыка)
+; Результаты поиска для смешанных типов (7fde1a1e-8b31-49a5-93b8-6be14cfa4943) \ Документы (36011842-dccc-40fe-aa3d-6177ea401788) \ Изображения (4dcafe13-e6a7-4c28-be02-ca8c2126280d) \ Видео (ea25fbd7-3bf7-409e-b97f-3352240903f4) \ Музыка (71689ac1-cc88-45d0-8a22-2943c3e7dfb3)
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{7FDE1A1E-8B31-49A5-93B8-6BE14CFA4943}]
 "Mode"=dword:00000004
 "Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\

@@ -38,10 +38,8 @@ reg import %programdata%\PostClear\_PostClear.reg
 
 title Copy shell view types
 set shell="HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\
-set common=%shell%{5C4F28B5-F869-4E84-8E60-F11DB97C5CC7}"
-reg copy %common% %shell%{7D49D726-3C21-4F05-99AA-FDC2C9474656}" /s /f
-set pictures=%shell%{B3690E58-E961-423B-B687-386EBFD83239}"
-reg copy %pictures% %shell%{5FA96407-7E77-483C-AC93-691D05850DE8}" /s /f
+reg copy %shell%{5C4F28B5-F869-4E84-8E60-F11DB97C5CC7}" %shell%{7D49D726-3C21-4F05-99AA-FDC2C9474656}" /s /f
+reg copy %shell%{B3690E58-E961-423B-B687-386EBFD83239}" %shell%{5FA96407-7E77-483C-AC93-691D05850DE8}" /s /f
 set search=%shell%{7FDE1A1E-8B31-49A5-93B8-6BE14CFA4943}"
 reg copy %search% %shell%{36011842-DCCC-40FE-AA3D-6177EA401788}" /s /f
 reg copy %search% %shell%{4DCAFE13-E6A7-4C28-BE02-CA8C2126280D}" /s /f
