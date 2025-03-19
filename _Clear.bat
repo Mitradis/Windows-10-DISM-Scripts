@@ -148,7 +148,7 @@ del /f /q Z:\WimOptimize.exe
 
 title Copy PostClear
 if not exist Z:\Install\Windows\ru-RU\explorer.exe.mui (
-	del /f /q Z:\PostClear\WinHelp.html
+	del /f /q Z:\PostClear\WinTool.html
 )
 move Z:\PostClear Z:\Install\ProgramData\PostClear
 

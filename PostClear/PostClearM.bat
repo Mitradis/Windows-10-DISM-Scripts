@@ -60,24 +60,23 @@ schtasks /delete /tn Microsoft\Windows\UNP\RunUpdateNotificationMgr /f
 schtasks /delete /tn "Microsoft\Windows\User Profile Service\HiveUploadTask" /f
 schtasks /delete /tn Microsoft\Windows\WaaSMedic\PerformRemediation /f
 schtasks /delete /tn "Microsoft\Windows\Windows Error Reporting\QueueReporting" /f
+schtasks /delete /tn "Microsoft\Windows\WindowsUpdate\Refresh Group Policy Cache" /f
 schtasks /delete /tn "Microsoft\Windows\WindowsUpdate\Scheduled Start" /f
-if exist %windir%\ru-RU\explorer.exe.mui (
-	schtasks /create /tn "Microsoft\Windows\WindowsUpdate\Scheduled Start" /tr %windir%\explorer.exe /sc once /sd 30/11/1999 /st 00:00 /ru SYSTEM
-)
-if exist %windir%\en-US\explorer.exe.mui (
-	schtasks /create /tn "Microsoft\Windows\WindowsUpdate\Scheduled Start" /tr %windir%\explorer.exe /sc once /sd 11/30/1999 /st 00:00 /ru SYSTEM
-)
-if exist %windir%\zh-CN\explorer.exe.mui (
-	schtasks /create /tn "Microsoft\Windows\WindowsUpdate\Scheduled Start" /tr %windir%\explorer.exe /sc once /sd 1999/11/30 /st 00:00 /ru SYSTEM
-)
-schtasks /change /tn "Microsoft\Windows\WindowsUpdate\Scheduled Start" /disable
-%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy remotesigned -Command "& Get-Acl -Path %windir%\System32\control.exe | Set-Acl -Path '%windir%\System32\Tasks\Microsoft\Windows\WindowsUpdate\Scheduled Start'"
 %programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Report policies" /f
+%programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Start Oobe Expedite Work" /f
+%programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn Microsoft\Windows\UpdateOrchestrator\StartOobeAppsScan_LicenseAccepted /f
+%programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn Microsoft\Windows\UpdateOrchestrator\StartOobeAppsScanAfterUpdate /f
 %programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Schedule Scan" /f
 %programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task" /f
 %programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn "Microsoft\Windows\UpdateOrchestrator\Schedule Work" /f
 %programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn Microsoft\Windows\UpdateOrchestrator\UpdateModelTask /f
 %programdata%\PostClear\superUser64.exe /ws %windir%\System32\schtasks.exe /delete /tn Microsoft\Windows\UpdateOrchestrator\USO_UxBroker /f
+set BLOCKLIST=%windir%\System32\Tasks\Microsoft\Windows\WindowsUpdate %windir%\System32\Tasks\Microsoft\Windows\UpdateOrchestrator
+for %%a in (%BLOCKLIST%) do (
+	takeown /f %%a
+	icacls %%a /grant "%username%":f /c /l /q
+	icacls %%a /deny "*S-1-1-0:(W,D,X,R,RX,M,F)" "*S-1-5-7:(W,D,X,R,RX,M,F)"
+)
 
 title Applying GroupPolicy
 %programdata%\PostClear\LGPO.exe /m %programdata%\PostClear\GPM.pol
@@ -125,9 +124,6 @@ if exist %windir%\ru-RU\explorer.exe.mui (
 ) else (
 	set gpedit=Group Policies
 	set oldcalc=Calculator
-)
-if exist %programdata%\PostClear\WinHelp.html (
-	%programdata%\PostClear\HelpTool.exe %programdata%\PostClear\WinHelp.html "%programdata%\Microsoft\Windows\Start Menu\Programs\System Tools\WinHelp.lnk"
 )
 %programdata%\PostClear\HelpTool.exe %programdata%\PostClear\WinTool.exe "%programdata%\Microsoft\Windows\Start Menu\Programs\System Tools\WinTool.lnk"
 %programdata%\PostClear\HelpTool.exe "%windir%\system32\gpedit.msc" "%programdata%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\%gpedit%.lnk"
