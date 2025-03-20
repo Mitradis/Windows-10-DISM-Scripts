@@ -22,7 +22,7 @@ The work of the set is divided into 2 stages:
 - Распаковать скрипты, файлы install.wim и boot.wim (из папки source файла .iso) в корень диска Z.
 - В случае отличия языка системы от русского, заменить в _Clear.bat «ru-RU», в блоке OneDrive, на свою версию.
 - Запустить _Clear.bat и ожидать завершение работы окна.
-- Убедится в отсутствии ошибок в файле Clear.log по поиску: «операция», «оши», «не », «нет» (не все строчки являются ошибками, внимательно читайте их описание).
+- Убедится в отсутствии ошибок в файле Clear.log по поиску: «отказано», «операция», «оши», «не », «нет» (не все строчки являются ошибками, внимательно читайте их описание).
 - Запустить CMD и выполнить первую команду из файла _Readme.txt.
 - С помощью UltraISO (или аналогов) удалить в .iso образе файл install.wim и добавить получившийся install.esd и boot.wim.
 - Образ готов.  
@@ -34,7 +34,7 @@ The work of the set is divided into 2 stages:
 - Unpack the scripts, install.wim and boot.wim files (from the source folder of the .iso file) to the root of the Z drive.
 - If the system language differs from Russian, replace “ru-RU” in _Clear.bat, in the OneDrive block, with your version.
 - Run _Clear.bat and wait for the window to finish.
-- Make sure there are no errors in the Clear.log file by searching: “operation”, “errors”, “not”, “no” (not all lines are errors, read their description carefully).
+- Make sure there are no errors in the Clear.log file by searching: “denied”, “operation”, “errors”, “not”, “no” (not all lines are errors, read their description carefully).
 - Launch CMD and execute the first command from the _Readme.txt file.
 - Using UltraISO (or analogues), delete the install.wim file in the .iso image and add the resulting install.esd and boot.wim.
 - The image is ready.
@@ -43,9 +43,9 @@ The work of the set is divided into 2 stages:
 - 该套件仅适用于 Windows 10\11。 必须具有完整的管理员权限。 可选，但在执行期间，建议禁用防病毒监控。 您将需要任何带有字母 Z 且大小至少为 14000MB 的磁盘（如果是 RAM，则需要支持 NTFS DISM 命令、SoftPerfect RAM 磁盘和类似磁盘）。
 - 下载版本中指定的所需图像和 .rar 存档。 如果驱动器是最小大小，则必须安装映像，但不能将映像定位在 Z 驱动器上。
 - 将脚本、install.wim 和 boot.wim 文件（来自 .iso 文件的源文件夹）解压到 Z 驱动器的根目录。
-- 如果系统语言与俄语不同，请将 OneDrive 块中 _Clear.bat 中的“ru-RU”替换为您的版本。
+- 如果系统语言与俄语不同，请将 OneDrive 块中 _Clear.bat 中的 “ru-RU” 替换为您的版本。
 - 运行 _Clear.bat 并等待窗口完成。
-- 通过搜索“operation”、“errors”、“not”、“no”确保 Clear.log 文件中没有错误（并非所有行都是错误，请仔细阅读其描述）。
+- 通过搜索 “denied”, “operation”、“errors”、“not”、“no” 确保 Clear.log 文件中没有错误（并非所有行都是错误，请仔细阅读其描述）。
 - 启动 CMD 并执行 _Readme.txt 文件中的第一个命令。
 - 使用 UltraISO（或类似工具），删除 .iso 映像中的 install.wim 文件并添加生成的 install.esd 和 boot.wim。
 - 图像已准备好。
