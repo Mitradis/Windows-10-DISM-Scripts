@@ -5,11 +5,27 @@ call :Clear>>Z:\Clear.log 2>&1
 EXIT /b 0
 :Clear
 
-title Compress boot.wim
 if exist Z:\boot.wim (
+	title Mount boot.wim
+	mkdir Z:\boot
+	dism /mount-image /imagefile:Z:\boot.wim /index:2 /mountdir:Z:\boot
+	
+	title Load registry
+	reg load HKEY_LOCAL_MACHINE\WIM_DEFAULT Z:\boot\Windows\System32\config\DEFAULT
+	
+	title Disable Mouse acceleration
+	reg add "HKEY_LOCAL_MACHINE\WIM_DEFAULT\Control Panel\Mouse" /v MouseSpeed /t REG_DWORD /d 0 /f
+	reg add "HKEY_LOCAL_MACHINE\WIM_DEFAULT\Control Panel\Mouse" /v MouseThreshold1 /t REG_DWORD /d 0 /f
+	reg add "HKEY_LOCAL_MACHINE\WIM_DEFAULT\Control Panel\Mouse" /v MouseThreshold2 /t REG_DWORD /d 0 /f
+	
+	title Unload registry
+	reg unload HKEY_LOCAL_MACHINE\WIM_DEFAULT
+	
+	title Unmount boot.wim
+	dism /unmount-wim /mountdir:Z:\boot /commit
+	
+	title Compress boot.wim
 	Z:\WimOptimize.exe Z:\boot.wim
-) else (
-	del /f /q Z:\boot.wim
 )
 
 title Applying _Clear.ps1
