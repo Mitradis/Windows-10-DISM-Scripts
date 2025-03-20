@@ -5,7 +5,7 @@ del /f /q %programdata%\PostClear\ClassicShell.msi
 xcopy /y /e "%programdata%\PostClear\Classic Shell" "%programfiles%\Classic Shell"
 rd /s /q "%programdata%\PostClear\Classic Shell"
 
-title Contex menu and disable Start
+title WinTool processing
 %programdata%\PostClear\WinTool.exe -setup=131071
 
 title Deleting tasks
