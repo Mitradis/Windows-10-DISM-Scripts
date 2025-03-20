@@ -112,6 +112,6 @@ All functions are completely safe and use exclusively standard methods and execu
 
 # Активация\Activation\激活
 [Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts/tree/master)  
-Внимание: использовать только метод активации KMS38 (3). Другие методы включают отключенные набором службы обновлений.  
-Attention: use only KMS38 activation method (3). Other methods enabled disabled by the kit update services.  
-注意：仅使用KMS38激活方法（3）。 其他方法包括由该组禁用更新服务。
+Внимание: использовать только метод активации KMS38. Другие методы включают отключенные набором службы обновлений.  
+Attention: use only KMS38 activation method. Other methods enabled disabled by the kit update services.  
+注意：仅使用KMS38激活方法 。 其他方法包括由该组禁用更新服务。
